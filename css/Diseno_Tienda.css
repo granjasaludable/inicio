@@ -118,7 +118,7 @@ body #ContenedorCabecera{
 			font:normal normal normal 13px arial;
 			color: #808080;
 			letter-spacing: 0.5px;
-			background-color: yellow;
+			/*background-color: yellow;*/
 		}
 		body div .classEsquinaSuperior:hover{
 			color: black;
