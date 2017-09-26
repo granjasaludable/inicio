@@ -1,0 +1,873 @@
+@charset "UTF-8";
+/* CSS Document */
+
+					/**********************************/
+					/****INICIO PESTAÑA DESPLEGABLE****/
+					/**********************************/
+						/*ul li ul{
+ESTO HACE					position:absolute;  	ESTO HACE QUE
+QUE NO BAJE LA PÁGINA								NO BAJE LA PÁGINA
+NO PONER NO PONER			display: none;			EL FLUJO NO RESPETA SU ANTERIOR HUECO, DESAPARECE
+							visibility: hidden;		EL FLUJO RESPETA SU ANTERIOR HUECO, SE QUEDA EN BLANCO
+							margin-top: 4px;
+							padding-top: 10px;
+							height: 0;
+							width: 230px;
+							border-top:2px solid #D3D3D3;
+							list-style-type: none;
+							background-color:greenyellow;
+						}
+
+						ul li:hover ul{
+NO PONER NO PONER			display: block;			NO COGE LA TRANSICIÓN
+							visibility: visible;	COGE LA TRANSICIÓN
+							height: 167px; 			HACE BAJAR EL CONTENEDOR
+							overflow: auto; 		HACE BAJAR LAS CASILLAS
+							
+								-moz-transition: 0.3s;
+								-ms-transition: 0.3s;
+								-o-transition: 0.3s;
+								-webkit-transition: 0.3s;
+								transition: 0.3s;
+										
+								-moz-transition-delay: 0.5s;
+								-ms-transition-delay: 0.5s;
+								-o-transition-delay: 0.5s;
+								-webkit-transition-delay: 0.5s;
+								transition-delay: 0.5s;
+						}*/
+					/*******************************/
+					/****FIN PESTAÑA DESPLEGABLE****/
+					/*******************************/
+
+
+/**************************/
+/****INICIO DE MI RESET****/
+/**************************/
+*{
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+ 	font-weight: normal;
+	letter-spacing: 0px;
+	text-decoration: none;
+	color: inherit;
+}
+/*************************/
+/****FINAL DE MI RESET****/		/*(AÑADIR RESET PARA VINCULOS LOVE HATE)*/
+/*************************/
+
+
+body{
+	/*PARA USAR IMÁGENES DE FONDO: background:url(blablabla.png) no-repeat right top;*/
+	/*display: block;		OBLIGATORIO PARA APLICAR PADDING A LOS <a>
+	text-decoration: none;
+	position:relative;
+	overflow: auto;
+	clear:right;
+	float:right;
+	width: 400px;
+	height: 50px;
+	margin:0; 
+	padding:0; ESTO AQUÍ NO ME HACE NADA*/
+	background-color:white;
+	/*border:1.3px solid #DDDDDD;
+	border-radius:3px;
+	box-shadow: 0 2px 2px #E5E5E5;*/
+
+	/*display: block;
+	text-decoration: none;
+	list-style-type: none;
+	text-align: center;
+	font:italic normal bold 20px arial;
+	color: rebeccapurple;
+	letter-spacing: 0;
+	cursor: pointer;*/
+}
+
+
+/******************************/
+/****EMPIEZA FONDO CABECERA****/
+/******************************/
+body #fondoCabecera{
+	border-bottom: 2px solid #D3D3D3;
+	background-color: #F4F4F4;
+}
+	/***********************************/
+	/****EMPIEZA CONTENEDOR CABECERA****/
+	/***********************************/
+	body div #contenedorCabecera{
+		background-color: darkblue;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+		/***************************************/
+		/****INICIO ESQUINA SUPERIOR DERECHA****/
+		/***************************************/
+		body div div #contenedorEsquina{
+			overflow: auto;
+			padding-top: 10px;
+			background-color: brown;
+		}
+			body div div ul .body_div_div_ul_li{
+				float: right;
+				margin-left: 15px;
+				list-style-type: none;
+				background-color: orange;
+			}
+			
+				body div div ul li .body_div_div_ul_li_a{
+					display: block;
+					text-align:center;
+					font:normal normal normal 13px arial;
+					color: #808080;
+					letter-spacing: 0.5px;
+					background-color:yellow;
+				}
+				body div div ul li .body_div_div_ul_li_a:hover{
+					color: black;
+				}
+		/************************************/
+		/****FIN ESQUINA SUPERIOR DERECHA****/
+		/************************************/
+
+
+		/*********************/
+		/****INICIO HEADER****/
+		/*********************/
+		body div div header{
+			background-color:navajowhite;
+			
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: -webkit-flex;
+			display: flex;
+			
+			justify-content:space-between;
+		}
+
+			body div div header h1{
+				background-color: aquamarine;
+				margin:24px 0;
+					
+					-moz-flex-grow: 0;
+					-ms-flex-grow: 0;
+					-o-flex-grow: 0;
+					-webkit-flex-grow: 0;
+					flex-grow: 0;
+					
+					-moz-flex-shrink: 0;
+					-ms-flex-shrink: 0;
+					-o-flex-shrink: 0;
+					-webkit-flex-shrink: 0;
+					flex-shrink: 0;
+			}
+
+				body div div header h1 a{
+					display: block;
+					text-decoration: none;
+					padding:0 10px 0 0;
+					text-align: left;
+					font:normal normal bold 50px arial;
+					color: green;
+					letter-spacing: 0;
+					background-color: yellow;
+				}
+
+			body div div header h2{
+				overflow: auto;
+				max-width: 250px;
+				margin: 30px 0;
+				border:1.3px solid #DDDDDD;
+				border-radius:3px;
+				box-shadow: 0 2px 2px #E5E5E5;
+				text-align:left;
+				font:normal normal normal 18px arial;
+				color: #939393;
+				letter-spacing: 0;
+				background-color: white;
+				
+				-moz-flex-grow: 1;
+				-ms-flex-grow: 1;
+				-o-flex-grow: 1;
+				-webkit-flex-grow: 1;
+				flex-grow: 1;
+				
+				-moz-flex-shrink: 1;
+				-ms-flex-shrink: 1;
+				-o-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
+				flex-shrink: 1;
+			}
+			body div div header h2:hover{
+				border:1.3px solid #D3D3D3;
+				box-shadow: 0 4px 4px #DBDBDB;
+				cursor:text;
+			}
+
+				body div div header h2 #idTextoBuscar{
+					float: left;
+					margin: 14px 0 0 20px;
+					background-color: blue;
+				}
+
+				body div div header h2 a{
+					display: block;
+					float: right;
+					padding: 10px;
+					margin: 3px 3px 2px 0;
+					background-color: blue;
+				}
+		/******************/
+		/****FIN HEADER****/
+		/******************/
+
+		/***********************************/
+		/****TERMINA CONTENEDOR CABECERA****/
+		/***********************************/
+
+
+
+	/******************************/
+	/****EMPIEZA BARRA SUPERIOR****/
+	/******************************/
+	body div div nav{
+		clear: both;
+		background-color: orange;
+	}
+
+	body div div nav #contenedorBarraSuperior{
+		background-color: yellow;
+	}
+	body div div nav div .nav_div_ul{
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: -webkit-flex;
+		display: flex;
+		
+		justify-content:space-between;
+		list-style-type: none;
+		background-color: blue;
+	}
+		#idPortada{
+			min-width: 100px;
+			margin-right:30px;
+			
+			-moz-flex-grow: 1;
+			-ms-flex-grow: 1;
+			-o-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			flex-grow: 1;
+			
+			-moz-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			-o-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			flex-shrink: 1;
+		}
+		#idExplotacion{
+			min-width: 200px;
+			margin-right:30px;
+			
+			-moz-flex-grow: 1;
+			-ms-flex-grow: 1;
+			-o-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			flex-grow: 1;
+			
+			-moz-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			-o-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			flex-shrink: 1;
+		}
+		#idTienda{
+			margin-right:30px;
+			
+			-moz-flex-grow: 1;
+			-ms-flex-grow: 1;
+			-o-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			flex-grow: 1;
+			
+			-moz-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			-o-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			flex-shrink: 1;
+			border-bottom: 4px solid green;
+		}
+				#arregloCarrito{
+					float: left;
+				}
+				#arregloCarrito2{
+					overflow: auto;
+					width: 162px;
+					margin: 0 auto;
+					
+					background-color: bisque;
+				}
+		#idContacto{
+			min-width: 100px;
+			
+			-moz-flex-grow: 1;
+			-ms-flex-grow: 1;
+			-o-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			flex-grow: 1;
+			
+			-moz-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			-o-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			flex-shrink: 1;
+		}
+			body div div nav div .nav_div_ul_li_a{
+				display: block;
+				overflow: auto;
+				text-decoration: none;
+				padding:10px;
+				text-align:center;
+				font:normal normal normal 16px arial;
+				color: #808080;
+				letter-spacing: 0;
+				background-color:aqua;
+			}
+			body div div nav div .nav_div_ul_li_a:hover{
+				color: black;
+			}
+			#idLinkPortada{
+				margin-right:20px;
+				/*Para marcar en su página*/
+			}
+			#idLinkExplotacion{
+				/*Para marcar en su página*/
+			}
+			#idLinkTienda{
+				color: green;
+				font:normal normal bold 16px arial;
+			}
+			#idLinkContacto{
+				margin-left:20px;
+			}
+					
+			body div div nav div .nav_div_ul_li_ul{
+				position:absolute;
+				visibility: hidden;
+				margin-top: 4px;
+				padding-top: 10px;
+				height: 0;
+				width: 230px;
+				border-top:2px solid #D3D3D3;
+				list-style-type: none;
+				background-color:greenyellow;
+			}
+			body div div nav div .nav_div_ul_li:hover ul{
+				visibility: visible;
+				height: 167px;
+				overflow: auto;
+				
+					-moz-transition: 0.3s;
+					-ms-transition: 0.3s;
+					-o-transition: 0.3s;
+					-webkit-transition: 0.3s;
+					transition: 0.3s;
+					-moz-transition-delay: 0.5s;
+					-ms-transition-delay: 0.5s;
+					-o-transition-delay: 0.5s;
+					-webkit-transition-delay: 0.5s;
+					transition-delay: 0.5s;
+			}
+				body div div nav div .contenedorDesplegableSuperior{
+					padding: 10px 0;
+					border:1.5px solid #D3D3D3;
+					background-color: red;
+				}
+					body div div nav div .nav_div_ul_li_ul_li{
+						background-color: orange;
+					}
+						body div div nav div .nav_div_ul_li_ul_li_a{
+							display: block;
+							text-decoration: none;
+							text-align:center;
+							font:normal normal normal 14px arial;
+							color: #808080;
+							letter-spacing: 0;
+							padding: 10px;
+							margin-left: 0.75px;
+							background-color: yellow;
+						}
+						body div div nav div .nav_div_ul_li_ul_li_a:hover{
+							background-color: #EEEEEE;
+							color: black;
+						}
+	/******************************/
+	/****TERMINA BARRA SUPERIOR****/
+	/******************************/
+
+/******************************/
+/****TERMINA FONDO CABECERA****/
+/******************************/
+
+
+/*********************/
+/****INICIO CUERPO****/
+/*********************/
+body #contenedorCuerpo{
+	max-width: 1000px;
+	margin: 10px auto;
+	padding: 0 10px;
+	background-color: red;
+	
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: flex;
+	
+	justify-content:space-between;
+}
+
+	/********************************/
+	/****INICIO CONTENIDO LATERAL****/
+	/********************************/
+	body div #contenedorLateral{
+		float: left;
+		width:240px;
+		background-color: orange;
+		
+		-moz-flex-grow: 0;
+		-ms-flex-grow: 0;
+		-o-flex-grow: 0;
+		-webkit-flex-grow: 0;
+		flex-grow: 0;
+		
+		-moz-flex-shrink: 0;
+		-ms-flex-shrink: 0;
+		-o-flex-shrink: 0;
+		-webkit-flex-shrink: 0;
+		flex-shrink: 0;
+	}
+
+		body div div #idMapa{
+			margin:10px 0 0;
+			padding:30px 10px;
+			border:1.3px solid #DDDDDD;
+			border-radius:3px;
+			box-shadow: 0 2px 2px #E5E5E5;
+			text-align:center;
+			font:normal normal normal 14px arial;
+			color: #808080;
+			letter-spacing: 0;
+			background-color: yellow;
+		}
+
+		body div div #idBarraLateral{
+			margin:10px 0;
+			border:1.3px solid #DDDDDD;
+			border-radius:3px;
+			box-shadow: 0 2px 2px #E5E5E5;
+			background-color: yellow;
+		}
+			body div div aside #tituloBarraLateral{
+				width: auto;
+				margin:20px 20px 0;
+				padding:10px 0;
+				border-bottom: 2px solid #D3D3D3;
+				text-align:left;
+				font:normal normal bold 14px arial;
+				color: #808080;
+				letter-spacing: 0;
+				background-color: blue;
+			}
+
+			body div div aside #contenedorBarraLateral{
+				background-color: purple;
+			}
+			body div div aside div .aside_div_ul{
+				padding: 10px 0;
+				background-color: coral;
+			}
+				body div div aside div ul .aside_div_ul_li{
+					list-style-type: none;
+					padding: 10px 0;
+					background-color: blue;							
+				}
+					body div div aside div ul li .aside_div_ul_li_a{
+					display: block;
+					text-decoration: none;
+					padding:10px 20px;
+					text-align:left;
+					font:normal normal normal 14px arial;
+					color: #808080;
+					letter-spacing: 0;
+					background-color:cornflowerblue;
+					}
+					body div div aside div ul li .aside_div_ul_li_a:hover{
+						background-color: #EEEEEE;
+						color: black;
+					}
+									
+					body div div aside div ul li .aside_div_ul_li_ul{
+						position:absolute;
+						visibility: hidden;
+						margin-top: -47px;
+						margin-left: 238px;
+						border-left: 1.3px solid #DDDDDD;
+						padding-left: 10px;
+						height: 0;
+						width: 240px;
+						background-color:purple;
+						list-style-type: none;
+					}
+					body div div aside div ul .aside_div_ul_li:hover ul{
+						visibility: visible;
+						height: 131px;
+						overflow: auto;
+						
+							-moz-transition: 0.3s;
+							-ms-transition: 0.3s;
+							-o-transition: 0.3s;
+							-webkit-transition: 0.3s;
+							transition: 0.3s;
+							-moz-transition-delay: 0.5s;
+							-ms-transition-delay: 0.5s;
+							-o-transition-delay: 0.5s;
+							-webkit-transition-delay: 0.5s;
+							transition-delay: 0.5s;
+					}
+
+						body div aside div ul li ul .contenedorDesplegableLateral{
+							padding: 10px 0;
+							border:1.5px solid #D3D3D3;
+							background-color: orange;
+						}
+						body div aside div ul li ul .aside_div_ul_li_ul_li{
+							background-color: yellow;
+						}
+							body div aside div ul li ul li .aside_div_ul_li_ul_li_a{
+								display: block;
+								text-decoration: none;
+								text-align:center;
+								font:normal normal normal 14px arial;
+								color: #808080;
+								letter-spacing: 0;
+								padding: 10px;
+								background-color: blue;
+							}
+							body div aside div ul li ul li .aside_div_ul_li_ul_li_a:hover{
+								background-color: #EEEEEE;
+								color: black;
+							}
+	/********************************/
+	/****FIN CONTENIDO LATERAL****/
+	/********************************/
+
+
+	/**********************************/
+	/****INICIO CONTENIDO PRINCIPAL****/
+	/**********************************/		
+	body section{
+		background-color:navajowhite;
+		
+		-moz-flex-grow: 1;
+		-ms-flex-grow: 1;
+		-o-flex-grow: 1;
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+		
+		-moz-flex-shrink: 1;
+		-ms-flex-shrink: 1;
+		-o-flex-shrink: 1;
+		-webkit-flex-shrink: 1;
+		flex-shrink: 1;
+	}
+		body section #idSeccionProductos{
+			margin:11.3px 0 0 10px;
+			padding:10px 10px 10px 0;
+			font:normal normal normal 14px arial;
+			color: #808080;
+			background-color:yellow;
+		}
+
+		body section #idOrdenarProductos{
+			float:right;
+			margin:10px 0 5px 10px;
+			padding:10px;
+			font:normal normal normal 14px arial;
+			color: #808080;
+			border:1.3px solid #DDDDDD;
+			border-radius:3px;
+			background-color:yellow;
+		}
+
+		body section article{
+			margin:0px 0 10px 10px;
+			border:1.3px solid #DDDDDD;
+			border-radius:3px;
+			box-shadow: 0 2px 2px #E5E5E5;
+			background-color:yellow;
+
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: -webkit-flex;
+			display: flex;
+
+			justify-content:space-between;
+		}
+		body section article:hover{
+			border:1.3px solid #CACACA;
+			border-radius:3px;
+			box-shadow: 0 4px 4px #DBDBDB;
+		}
+			body section article figure{
+				float:left;
+				margin:0;
+				padding:0;
+				border-radius:3px;
+				background-color:blue;
+			}
+				body section article figure img{
+					float:left;
+					border-radius:3px 0 0 3px;
+					cursor: pointer;
+					background-color:cornflowerblue;
+				}
+
+				.contenedorDatosArticulos a{
+					display: block;
+					text-decoration: none;
+					float:left;
+					width: 280px;
+					margin:20px;
+					color: #575757;
+					background-color:blue;
+				}
+				.contenedorDatosArticulos a:hover{
+					color:black;
+				}
+
+				.contenedorDatosArticulos .classAloeNombres{
+					clear:both;
+					float:left;
+					width: 280px;
+					margin:10px 0;
+					text-align:left;
+					font:normal normal bold 20px arial;
+					letter-spacing: 0;
+					background-color:cornflowerblue;
+				}
+
+				.contenedorDatosArticulos .classAloeDescripciones{
+					clear: both;
+					float:left;
+					width: 280px;
+					margin:10px 0;
+					text-align:left;
+					font:normal normal normal 14px arial;
+					letter-spacing: 0;
+					background-color:cornflowerblue;
+				}
+
+				.contenedorComprasArticulos{
+					float:left;
+					width: 150px;
+					margin:20px 0;
+					padding:10px;
+					border-left: 2px solid #D3D3D3;
+					background-color:blue;
+				}
+
+				.contenedorComprasArticulos .classAloePrecios{
+					clear: both;
+					float:left;
+					width: 150px;
+					margin:64px 0 10px;
+					text-align:center;
+					font:normal normal bold 20px arial;
+					color: green;
+					letter-spacing: 0;
+					background-color:cornflowerblue;
+				}
+				.contenedorComprasArticulos .classAloeComprar a{
+					display: block;
+					text-decoration: none;
+					clear: both;
+					float:left;
+					width: 130px;
+					margin: 0;
+					padding:10px;
+					background-color:green;
+					border-radius:3px;
+					text-align:center;
+					font:normal normal bold 20px arial;
+					color: white;
+					letter-spacing: 0;
+				}
+				.contenedorComprasArticulos .classAloeComprar a:hover{
+					background-color: #005A00;
+				}
+/******************/
+/****FIN CUERPO****/
+/******************/
+
+
+/******************/
+/****INICIO PIE****/
+/******************/
+	body footer{
+		background-color: #F4F4F4;
+		padding: 10px;
+		clear: both;
+	}
+		body footer ul{
+			overflow: auto;
+			background-color: blue;
+			padding: 10px;
+		}
+			body footer ul li{
+				float:right;
+				margin-left: 5px;
+				list-style-type: none;
+				background-color:white;
+			}
+
+		body footer h2{
+			background-color: green;
+			margin: 10px;
+		}
+
+		body footer p{
+			background-color: orange;
+			margin: 10px;
+		}
+/***************/
+/****FIN PIE****/
+/***************/
+
+
+
+
+/*********************/
+/****INICIO ICONOS****/
+/*********************/
+body div div ul li a .icon-user{
+	float: left;		/*SIN FLOAT NO FUNCIONA EL MARGIN-TOP*/
+	margin-right: 5px;
+}
+
+body div div ul li a .icon-shopping-bag{
+	margin-right: 5px;
+}
+
+body div header h2 a .icon-search{
+	float: right;
+	color: green;
+}
+
+body div nav div ul li a .icon-home2{
+	margin-right: 20px;
+}
+
+
+body div nav div ul li a .icon-shopping-cart{
+	margin-right: 20px;
+	float: left;
+}
+
+body div nav div ul li a .icon-chevron-down{
+	display: block;
+	float: left;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+
+body div nav div ul li a .icon-leaf{
+	margin-right: 20px;
+}
+
+body div nav div ul li a .icon-old-phone{
+	margin-right: 20px;
+}
+body div div #idMapa .icon-location{
+	margin-right: 8px;
+}
+body div div aside ul li a .icon-chevron-right{
+	float: right;
+	margin-top: 2px;
+	margin-right: 15px;
+}
+
+body section #idOrdenarProductos .icon-chevron-down{
+	float: left;
+	margin-top: 2px;
+	margin-right: 10px;
+}
+
+body section #idOrdenarProductos .icon-sort-amount-desc{
+	float: right;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+/******************/
+/****FIN ICONOS****/
+/******************/
+
+
+
+/********************************/		/*también puedo poner (min-width:) and (max-width: 320px)*/
+/****INICIO DISEÑO RESPONSIVE****/		/*qué es @media only wide*/
+/********************************/
+@media only screen and (max-width: 991px){
+	/*#idMapa{
+		width: 100%;
+		height: auto;
+	}*/
+	body div div header h1 a{
+		background-color: aquamarine;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	/*#idMapa{
+		width: 100%;
+		height: auto;
+	}*/
+	body div div header h1 a{
+		background-color: orange;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	/*#idMapa{
+		width: 100%;
+		height: auto;
+	}*/
+	body div div header h1 a{
+		background-color: blue;
+	}
+}
+
+@media only screen and (max-width: 375px){
+	/*#idMapa{
+		width: 100%;
+		height: auto;
+	}*/
+	body div div header h1 a{
+		background-color: cornflowerblue;
+	}
+}
+
+
+
+
+
+
+
+
