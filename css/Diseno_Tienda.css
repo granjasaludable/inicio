@@ -99,7 +99,7 @@ body #ContenedorCabeceraColorear{
 body #ContenedorCabecera{
 	width: 1022.6px;
 	margin: 0 auto;
-	background-color: red;
+	
 }
 	/***************************************/
 	/****INICIO ESQUINA SUPERIOR DERECHA****/
@@ -107,7 +107,7 @@ body #ContenedorCabecera{
 	body #ContenedorEsquina{
 		overflow: auto;
 		padding-top: 10px;
-		background-color: orange;
+		
 	}
 
 		body div .classEsquinaSuperior{
@@ -150,7 +150,7 @@ body #ContenedorCabecera{
 				font:normal normal bold 60px arial;
 				color: green;
 				letter-spacing: 0;
-				background-color: yellow;
+				
 			}
 			
 		body div header h2{
@@ -183,7 +183,7 @@ body #ContenedorCabecera{
 				float: right;
 				padding: 10px;
 				margin: 3px 3px 2px 0;
-				background-color: blue;
+				
 			}
 	/******************/
 	/****FIN HEADER****/
@@ -195,15 +195,15 @@ body #ContenedorCabecera{
 	/*****************************/
 	body div nav{
 		clear: both;
-		background-color: orange;
+		
 	}
 
 	body div nav #contenedorBarraSuperior{
-		background-color: yellow;
+		
 	}
 	body div nav div .nav_div_ul{
 		overflow: auto;
-		background-color: blue;
+		
 	}
 		body div nav div .nav_div_ul_li{
 			float:left;
@@ -281,10 +281,10 @@ body #ContenedorCabecera{
 				body div nav div .contenedorDesplegableSuperior{
 					padding: 10px 0;
 					border:1.5px solid #D3D3D3;
-					background-color: red;
+					
 				}
 					body div nav div .nav_div_ul_li_ul_li{
-						background-color: orange;
+						
 					}
 						body div nav div .nav_div_ul_li_ul_li_a{
 							display: block;
@@ -295,7 +295,7 @@ body #ContenedorCabecera{
 							letter-spacing: 0;
 							padding: 10px;
 							margin-left: 0.75px;
-							background-color: yellow;
+							
 						}
 						body div nav div .nav_div_ul_li_ul_li_a:hover{
 							background-color: #EEEEEE;
@@ -317,7 +317,7 @@ body #contenedorCuerpo{
 	overflow: auto;
 	width: 1022.6px;
 	margin:10px auto;
-	background-color: red;
+	
 }
 
 	/********************************/
@@ -326,7 +326,7 @@ body #contenedorCuerpo{
 	body div #contenedorLateral{
 		float: left;
 		width:240px;
-		background-color: orange;
+		
 	}
 
 		body div div #idMapa{
@@ -339,7 +339,7 @@ body #contenedorCuerpo{
 			font:normal normal normal 14px arial;
 			color: #808080;
 			letter-spacing: 0;
-			background-color: yellow;
+			
 		}
 
 		body div div #idBarraLateral{
@@ -347,7 +347,7 @@ body #contenedorCuerpo{
 			border:1.3px solid #DDDDDD;
 			border-radius:3px;
 			box-shadow: 0 2px 2px #E5E5E5;
-			background-color: yellow;
+			
 		}
 			body div div aside #tituloBarraLateral{
 				width: auto;
@@ -358,7 +358,7 @@ body #contenedorCuerpo{
 				font:normal normal bold 14px arial;
 				color: #808080;
 				letter-spacing: 0;
-				background-color: blue;
+				
 			}
 
 			body div div aside #contenedorBarraLateral{
@@ -371,7 +371,7 @@ body #contenedorCuerpo{
 				body div div aside div ul .aside_div_ul_li{
 					list-style-type: none;
 					padding: 10px 0;
-					background-color: blue;							
+											
 				}
 					body div div aside div ul li .aside_div_ul_li_a{
 					display: block;
@@ -420,10 +420,10 @@ body #contenedorCuerpo{
 						body div aside div ul li ul .contenedorDesplegableLateral{
 							padding: 10px 0;
 							border:1.5px solid #D3D3D3;
-							background-color: orange;
+							
 						}
 						body div aside div ul li ul .aside_div_ul_li_ul_li{
-							background-color: yellow;
+							
 						}
 							body div aside div ul li ul li .aside_div_ul_li_ul_li_a{
 								display: block;
@@ -433,7 +433,7 @@ body #contenedorCuerpo{
 								color: #808080;
 								letter-spacing: 0;
 								padding: 10px;
-								background-color: blue;
+								
 							}
 							body div aside div ul li ul li .aside_div_ul_li_ul_li_a:hover{
 								background-color: #EEEEEE;
@@ -458,7 +458,7 @@ body #contenedorCuerpo{
 			padding:10px 10px 10px 0;
 			font:normal normal normal 14px arial;
 			color: #808080;
-			background-color:yellow;
+			
 		}
 
 		body section #idOrdenarProductos{
@@ -469,7 +469,7 @@ body #contenedorCuerpo{
 			color: #808080;
 			border:1.3px solid #DDDDDD;
 			border-radius:3px;
-			background-color:yellow;
+			
 		}
 
 		body section article{
@@ -480,7 +480,7 @@ body #contenedorCuerpo{
 			border:1.3px solid #DDDDDD;
 			border-radius:3px;
 			box-shadow: 0 2px 2px #E5E5E5;
-			background-color:yellow;
+			
 		}
 		body section article:hover{
 			border:1.3px solid #CACACA;
@@ -492,7 +492,7 @@ body #contenedorCuerpo{
 				margin:0;
 				padding:0;
 				border-radius:3px;
-				background-color:blue;
+				
 			}
 				body section article figure img{
 					float:left;
@@ -508,7 +508,7 @@ body #contenedorCuerpo{
 					width: 280px;
 					margin:20px;
 					color: #575757;
-					background-color:blue;
+					
 				}
 				.contenedorDatosArticulos a:hover{
 					color:black;
@@ -542,7 +542,7 @@ body #contenedorCuerpo{
 					margin:20px 0;
 					padding:10px;
 					border-left: 2px solid #D3D3D3;
-					background-color:blue;
+					
 				}
 
 				.contenedorComprasArticulos .classAloePrecios{
@@ -564,7 +564,7 @@ body #contenedorCuerpo{
 					width: 130px;
 					margin: 0;
 					padding:10px;
-					background-color:green;
+					
 					border-radius:3px;
 					text-align:center;
 					font:normal normal bold 20px arial;
@@ -589,7 +589,7 @@ body #contenedorCuerpo{
 	}
 		body footer ul{
 			overflow: auto;
-			background-color: blue;
+			
 			padding: 10px;
 		}
 			body footer ul li{
@@ -600,12 +600,12 @@ body #contenedorCuerpo{
 			}
 
 		body footer h2{
-			background-color: green;
+			
 			margin: 10px;
 		}
 
 		body footer p{
-			background-color: orange;
+			
 			margin: 10px;
 		}
 /***************/
