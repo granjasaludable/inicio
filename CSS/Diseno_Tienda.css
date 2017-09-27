@@ -130,6 +130,10 @@ body #fondoCabecera{
 				body div div ul li .body_div_div_ul_li_a:hover{
 					color: black;
 				}
+
+					body div div ul li a .textosEsquina{
+						float: right;
+					}
 		/************************************/
 		/****FIN ESQUINA SUPERIOR DERECHA****/
 		/************************************/
@@ -467,7 +471,7 @@ body #contenedorCuerpo{
 			font:normal normal normal 14px arial;
 			color: #808080;
 			letter-spacing: 0;
-			
+			background-color: #FAFAFA;
 		}
 
 		body div div #idBarraLateral{
@@ -475,6 +479,7 @@ body #contenedorCuerpo{
 			border:1.3px solid #DDDDDD;
 			border-radius:3px;
 			box-shadow: 0 2px 2px #E5E5E5;
+			background-color: #FAFAFA;
 			
 		}
 			body div div aside #tituloBarraLateral{
@@ -525,6 +530,7 @@ body #contenedorCuerpo{
 						padding-left: 5px;
 						height: 0;
 						width: 240px;
+						background-color: white;
 						
 						list-style-type: none;
 					}
@@ -548,7 +554,7 @@ body #contenedorCuerpo{
 						body div aside div ul li ul .contenedorDesplegableLateral{
 							padding: 10px 0;
 							border:1.5px solid #D3D3D3;
-							background-color: white;
+							
 						}
 						body div aside div ul li ul .aside_div_ul_li_ul_li{
 							
@@ -607,6 +613,7 @@ body #contenedorCuerpo{
 			color: #808080;
 			border:1.3px solid #DDDDDD;
 			border-radius:3px;
+			background-color: #FAFAFA;
 			
 		}
 
@@ -616,6 +623,7 @@ body #contenedorCuerpo{
 			border:1.3px solid #DDDDDD;
 			border-radius:3px;
 			box-shadow: 0 2px 2px #E5E5E5;
+			background-color: #FAFAFA;
 			
 
 			display: -moz-flex;
@@ -628,7 +636,6 @@ body #contenedorCuerpo{
 		}
 		body section article:hover{
 			border:1.3px solid #CACACA;
-			border-radius:3px;
 			box-shadow: 0 4px 4px #DBDBDB;
 		}
 			body section article figure{
@@ -747,7 +754,6 @@ body #contenedorCuerpo{
 /****INICIO ICONOS****/
 /*********************/
 body div div ul li a .icon-user{
-	float: left;		/*SIN FLOAT NO FUNCIONA EL MARGIN-TOP*/
 	margin-right: 5px;
 }
 
@@ -1394,12 +1400,18 @@ body #contenedorCuerpo{
 /******************************************************************************************************/
 @media only screen and (max-width: 600px){
 	
-body div div header h1 a{
-	font:normal normal bold 30px arial;
-}
+	body div div header h1 a{
+		font:normal normal bold 30px arial;
+	}
 	
-	
-	
+	body div div header #menu{
+		position: absolute;
+		display: block;
+		left: 40px;
+		top: 36px;
+		font-size: 30px;
+		color: #808080;	
+	}
 	
 	
 	body section article{
@@ -1435,7 +1447,7 @@ body div div header h1 a{
 				}
 
 				.contenedorDatosArticulos{
-					height: 50px;
+					background-color: chartreuse;
 					width: 52%;
 					padding: 0;
 					margin: 0;
@@ -1477,7 +1489,6 @@ body div div header h1 a{
 
 				.contenedorComprasArticulos{
 					
-					height: 50px;
 					width: 52%;
 					padding:0;
 					margin: 0;
@@ -1522,27 +1533,138 @@ body div div header h1 a{
 
 
 
-
-
+/******************************************************************************************************/
+/***************************************EMPIEZA DE 376px A 480px***************************************/
+/******************************************************************************************************/
 @media only screen and (max-width: 480px){
-	/*#idMapa{
-		width: 100%;
-		height: auto;
-	}*/
-	body div div header h1 a{
-		background-color: red;
+	
+		/***************************************/
+		/****INICIO ESQUINA SUPERIOR DERECHA****/
+		/***************************************/	
+	
+			body div div header #menu{
+				left: 40px;
+				top: 10px;
+				font-size: 30px;
+			}
+	
+			body div div ul li a .textosEsquina{
+				display: none;
+			}
+	
+			body div div ul li a #idIconoEsquina1{
+				position: absolute;
+				right: 25px;
+				top: 13px;
+				font-size: 25px;
+			}
+	
+			body div div ul li a #idIconoEsquina2{
+				position: absolute;
+				right: 55px;
+				top: 13px;
+				font-size: 25px;
+			}
+		
+		body div div header{
+			padding-top: 5px;
+		}
+		
+		body div div header h1 a{
+			font-size: 20px
+		}
+	
+body #contenedorCuerpo{
+	margin: 0 auto 10px;
+	padding: 100px 10px 0;
 	}
-}
+	body section #idSeccionProductos{
+			/*margin:11.3px 0 0 10px;
+			padding:10px 10px 10px 0;*/
+			font:normal normal normal 12px arial;
+		}
 
-@media only screen and (max-width: 375px){
-	/*#idMapa{
-		width: 100%;
-		height: auto;
-	}*/
-	body div div header h1 a{
-		background-color: cornflowerblue;
+		body section #idOrdenarProductos{
+			/*margin:10px 0 5px 10px;
+			padding:10px;*/
+			font:normal normal normal 12px arial;
+		}
+		body section article{
+			height: 125px;
+			border-radius: 0;
+			background-color: aqua;
 	}
+			body section article figure{
+				background-color:coral;
+				margin: 5px;
+				width: 100px;
+				height: 100px;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+				body section article figure img{
+					width: 100px;
+					height: 100px;
+					padding: 0;
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+					margin: 0;
+				}
+				.contenedorDatosArticulos{
+					width: 63%;
+					padding: 0;
+					margin: 0;
+					
+					flex-basis: 60%;
+				}
+				.contenedorDatosArticulos a{
+					
+					padding: 0;
+					margin: 5px 0 0 0;
+				}
+	
+				.contenedorComprasArticulos{
+					width: 63%;
+					
+					flex-basis: 25%;
+				}
+	
+				.contenedorDatosArticulos .classAloeNombres{
+					font:normal normal bold 14px arial;
+				}
+
+				.contenedorDatosArticulos .classAloeDescripciones{
+					font:normal normal normal 12px arial;
+				}
+
+				.contenedorComprasArticulos .classAloePrecios{
+					margin: 11px 0 0 15px;
+					font:normal normal bold 12px arial;
+				}
+				.contenedorComprasArticulos .classAloeComprar a{
+					width: 70px;
+					padding: 5px 30px;
+					margin: 5px 0 0;
+					font:normal normal bold 14px arial;
+				}
+}	
+/******************************************************************************************************/
+/***************************************TERMINA DE 376px A 480px***************************************/
+/******************************************************************************************************/
+
+	@media only screen and (max-width: 375px){
+
+				
+	
 }
+/******************************************************************************************************/
+/***************************************TERMINA DE 376px A 480px***************************************/
+/******************************************************************************************************/
+
+
+
+
+
 
 
 
