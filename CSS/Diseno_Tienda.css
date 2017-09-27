@@ -1431,7 +1431,7 @@ body #contenedorCuerpo{
 			align-items: stretch;
 		}
 			body section article figure{
-				background-color:coral;
+				
 				width: 200px;
 				height: 170px;
 				padding: 0;
@@ -1447,7 +1447,7 @@ body #contenedorCuerpo{
 				}
 
 				.contenedorDatosArticulos{
-					background-color: chartreuse;
+					
 					width: 52%;
 					padding: 0;
 					margin: 0;
@@ -1592,10 +1592,10 @@ body #contenedorCuerpo{
 		body section article{
 			height: 125px;
 			border-radius: 0;
-			background-color: aqua;
+			
 	}
 			body section article figure{
-				background-color:coral;
+				
 				margin: 5px;
 				width: 100px;
 				height: 100px;
