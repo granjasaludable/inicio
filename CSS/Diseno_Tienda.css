@@ -1,0 +1,1675 @@
+@charset "UTF-8";
+/* CSS Document */
+
+					/**********************************/
+					/****INICIO PESTAÑA DESPLEGABLE****/
+					/**********************************/
+						/*ul li ul{
+ESTO HACE					position:absolute;  	ESTO HACE QUE
+QUE NO BAJE LA PÁGINA								NO BAJE LA PÁGINA
+NO PONER NO PONER			display: none;			EL FLUJO NO RESPETA SU ANTERIOR HUECO, DESAPARECE
+							visibility: hidden;		EL FLUJO RESPETA SU ANTERIOR HUECO, SE QUEDA EN BLANCO
+							margin-top: 4px;
+							padding-top: 10px;
+							height: 0;
+							width: 230px;
+							border-top:2px solid #D3D3D3;
+							list-style-type: none;
+							
+						}
+
+						ul li:hover ul{
+NO PONER NO PONER			display: block;			NO COGE LA TRANSICIÓN
+							visibility: visible;	COGE LA TRANSICIÓN
+							height: 167px; 			HACE BAJAR EL CONTENEDOR
+							overflow: auto; 		HACE BAJAR LAS CASILLAS
+							
+								-moz-transition: 0.3s;
+								-ms-transition: 0.3s;
+								-o-transition: 0.3s;
+								-webkit-transition: 0.3s;
+								transition: 0.3s;
+										
+								-moz-transition-delay: 0.5s;
+								-ms-transition-delay: 0.5s;
+								-o-transition-delay: 0.5s;
+								-webkit-transition-delay: 0.5s;
+								transition-delay: 0.5s;
+						}*/
+					/*******************************/
+					/****FIN PESTAÑA DESPLEGABLE****/
+					/*******************************/
+
+
+/**************************/
+/****INICIO DE MI RESET****/
+/**************************/
+*{
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+ 	font-weight: normal;
+	letter-spacing: 0;
+	text-decoration: none;
+	color: inherit;
+}
+/*************************/
+/****FINAL DE MI RESET****/		/*(AÑADIR RESET PARA VINCULOS LOVE HATE)*/
+/*************************/
+
+
+body{
+	/*PARA USAR IMÁGENES DE FONDO: background:url(blablabla.png) no-repeat right top;*/
+	/*display: block;		OBLIGATORIO PARA APLICAR PADDING A LOS <a>
+	text-decoration: none;
+	position:relative;
+	overflow: auto;
+	clear:right;
+	float:right;
+	width: 400px;
+	height: 50px;
+	margin:0; 
+	padding:0; ESTO AQUÍ NO ME HACE NADA*/
+	background-color:white;
+	/*border:1.3px solid #DDDDDD;
+	border-radius:3px;
+	box-shadow: 0 2px 2px #E5E5E5;*/
+
+	/*display: block;
+	text-decoration: none;
+	list-style-type: none;
+	text-align: center;
+	font:italic normal bold 20px arial;
+	color: rebeccapurple;
+	letter-spacing: 0;
+	cursor: pointer;*/
+}
+
+
+/******************************/
+/****EMPIEZA FONDO CABECERA****/
+/******************************/
+body #fondoCabecera{
+	border-bottom: 2px solid #D3D3D3;
+	background-color: #F4F4F4;
+}
+	/***********************************/
+	/****EMPIEZA CONTENEDOR CABECERA****/
+	/***********************************/
+	body div #contenedorCabecera{
+		
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+		/***************************************/
+		/****INICIO ESQUINA SUPERIOR DERECHA****/
+		/***************************************/
+		body div div #contenedorEsquina{
+			overflow: auto;
+			padding-top: 10px;
+			
+		}
+			body div div ul .body_div_div_ul_li{
+				float: right;
+				margin-left: 15px;
+				list-style-type: none;
+				
+			}
+			
+				body div div ul li .body_div_div_ul_li_a{
+					display: block;
+					text-align:center;
+					font:normal normal normal 13px arial;
+					color: #808080;
+					letter-spacing: 0.5px;
+					
+				}
+				body div div ul li .body_div_div_ul_li_a:hover{
+					color: black;
+				}
+
+					body div div ul li a .textosEsquina{
+						float: right;
+					}
+		/************************************/
+		/****FIN ESQUINA SUPERIOR DERECHA****/
+		/************************************/
+
+
+		/*********************/
+		/****INICIO HEADER****/
+		/*********************/
+		body div div header{
+			
+			
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: -webkit-flex;
+			display: flex;
+			
+			justify-content:space-between;
+		}
+
+			body div div header #menu{
+				display: none;
+			}
+
+			body div div header h1{
+				
+				margin:24px 0;
+					
+					-moz-flex-grow: 0;
+					-ms-flex-grow: 0;
+					-o-flex-grow: 0;
+					-webkit-flex-grow: 0;
+					flex-grow: 0;
+					
+					-moz-flex-shrink: 0;
+					-ms-flex-shrink: 0;
+					-o-flex-shrink: 0;
+					-webkit-flex-shrink: 0;
+					flex-shrink: 0;
+			}
+
+				body div div header h1 a{
+					display: block;
+					text-decoration: none;
+					padding:0 10px 0 0;
+					text-align: left;
+					font:normal normal bold 50px arial;
+					color: green;
+					letter-spacing: 0;
+					
+				}
+
+			body div div header h2{
+				overflow: auto;
+				max-width: 250px;
+				margin: 30px 0;
+				border:1.3px solid #DDDDDD;
+				border-radius:3px;
+				box-shadow: 0 2px 2px #E5E5E5;
+				text-align:left;
+				font:normal normal normal 18px arial;
+				color: #939393;
+				letter-spacing: 0;
+				background-color: white;
+				
+				-moz-flex-grow: 1;
+				-ms-flex-grow: 1;
+				-o-flex-grow: 1;
+				-webkit-flex-grow: 1;
+				flex-grow: 1;
+				
+				-moz-flex-shrink: 1;
+				-ms-flex-shrink: 1;
+				-o-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
+				flex-shrink: 1;
+			}
+			body div div header h2:hover{
+				border:1.3px solid #D3D3D3;
+				box-shadow: 0 4px 4px #DBDBDB;
+				cursor:text;
+			}
+
+				body div div header h2 #idTextoBuscar{
+					float: left;
+					margin: 14px 0 0 20px;
+					
+				}
+
+				body div div header h2 a{
+					display: block;
+					float: right;
+					padding: 10px;
+					margin: 3px 3px 2px 0;
+					
+				}
+		/******************/
+		/****FIN HEADER****/
+		/******************/
+
+		/***********************************/
+		/****TERMINA CONTENEDOR CABECERA****/
+		/***********************************/
+
+
+
+	/******************************/
+	/****EMPIEZA BARRA SUPERIOR****/
+	/******************************/
+	body div div nav{
+		clear: both;
+		
+	}
+
+	body div div nav #contenedorBarraSuperior{
+		
+	}
+	body div div nav div .nav_div_ul{
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: -webkit-flex;
+		display: flex;
+		
+		justify-content:space-between;
+		list-style-type: none;
+		
+	}
+		#idPortada{
+			margin-right:30px;
+			
+			-moz-flex-grow: 1;
+			-ms-flex-grow: 1;
+			-o-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			flex-grow: 1;
+			
+			-moz-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			-o-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			flex-shrink: 1;
+		}
+		#idExplotacion{
+			margin-right:30px;
+			
+			-moz-flex-grow: 1;
+			-ms-flex-grow: 1;
+			-o-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			flex-grow: 1;
+			
+			-moz-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			-o-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			flex-shrink: 1;
+		}
+		#idTienda{
+			position: relative;
+			
+			margin-right:30px;
+			border-bottom: 4px solid green;
+			
+			-moz-flex-grow: 1;
+			-ms-flex-grow: 1;
+			-o-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			flex-grow: 1;
+			
+			-moz-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			-o-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			flex-shrink: 1;
+		}
+				#arregloCarrito{
+					float: left;
+				}
+				#arregloCarrito2{
+					overflow: auto;
+					width: 162px;
+					margin: 0 auto;
+					
+					
+				}
+		#idContacto{
+			min-width: 100px;
+			
+			-moz-flex-grow: 1;
+			-ms-flex-grow: 1;
+			-o-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			flex-grow: 1;
+			
+			-moz-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			-o-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			flex-shrink: 1;
+		}
+			body div div nav div .nav_div_ul_li_a{
+				display: block;
+				overflow: auto;
+				text-decoration: none;
+				padding:10px;
+				text-align:center;
+				font:normal normal normal 16px arial;
+				color: #808080;
+				letter-spacing: 0;
+				
+			}
+			body div div nav div .nav_div_ul_li_a:hover{
+				color: black;
+			}
+			#idLinkPortada{
+				/*Para marcar en su página*/
+			}
+			#idLinkExplotacion{
+				/*Para marcar en su página*/
+			}
+			#idLinkTienda{
+				color: green;
+				font:normal normal bold 16px arial;
+			}
+			#idLinkContacto{
+				/*Para marcar en su página*/
+			}
+					
+			body div div nav div .nav_div_ul_li_ul{
+				position:absolute;
+				visibility: hidden;
+				margin-top: 4px;
+				padding-top: 10px;
+				height: 0;
+				width: 100%;
+				border-top:2px solid #D3D3D3;
+				list-style-type: none;
+				
+			}
+			body div div nav div .nav_div_ul_li:hover ul{
+				visibility: visible;
+				height: 167px;
+				
+					-moz-transition: 0.3s;
+					-ms-transition: 0.3s;
+					-o-transition: 0.3s;
+					-webkit-transition: 0.3s;
+					transition: 0.3s;
+					-moz-transition-delay: 0.5s;
+					-ms-transition-delay: 0.5s;
+					-o-transition-delay: 0.5s;
+					-webkit-transition-delay: 0.5s;
+					transition-delay: 0.5s;
+			}
+				body div div nav div .contenedorDesplegableSuperior{
+					padding: 10px 0;
+					border:1.5px solid #D3D3D3;
+					background-color: white;
+					
+				}
+					body div div nav div .nav_div_ul_li_ul_li{
+						
+					}
+						body div div nav div .nav_div_ul_li_ul_li_a{
+							display: block;
+							text-decoration: none;
+							text-align:center;
+							font:normal normal normal 14px arial;
+							color: #808080;
+							letter-spacing: 0;
+							padding: 10px;
+							margin-left: 0.75px;
+							
+						}
+						body div div nav div .nav_div_ul_li_ul_li_a:hover{
+							background-color: #EEEEEE;
+							color: black;
+						}
+	/******************************/
+	/****TERMINA BARRA SUPERIOR****/
+	/******************************/
+
+/******************************/
+/****TERMINA FONDO CABECERA****/
+/******************************/
+
+
+/*********************/
+/****INICIO CUERPO****/
+/*********************/
+body #contenedorCuerpo{
+	max-width: 1000px;
+	margin: 10px auto;
+	padding: 0 10px;
+	
+	
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: flex;
+	
+	justify-content:space-between;
+}
+
+	/********************************/
+	/****INICIO CONTENIDO LATERAL****/
+	/********************************/
+	body div #contenedorLateral{
+		float: left;
+		width:240px;
+		
+		
+		-moz-flex-grow: 0;
+		-ms-flex-grow: 0;
+		-o-flex-grow: 0;
+		-webkit-flex-grow: 0;
+		flex-grow: 0;
+		
+		-moz-flex-shrink: 0;
+		-ms-flex-shrink: 0;
+		-o-flex-shrink: 0;
+		-webkit-flex-shrink: 0;
+		flex-shrink: 0;
+	}
+
+		body div div #idMapa{
+			margin:10px 0 0;
+			padding:30px 10px;
+			border:1.3px solid #DDDDDD;
+			border-radius:3px;
+			box-shadow: 0 2px 2px #E5E5E5;
+			text-align:center;
+			font:normal normal normal 14px arial;
+			color: #808080;
+			letter-spacing: 0;
+			background-color: #FAFAFA;
+		}
+
+		body div div #idBarraLateral{
+			margin:10px 0;
+			border:1.3px solid #DDDDDD;
+			border-radius:3px;
+			box-shadow: 0 2px 2px #E5E5E5;
+			background-color: #FAFAFA;
+			
+		}
+			body div div aside #tituloBarraLateral{
+				width: auto;
+				margin:20px 20px 0;
+				padding:10px 0;
+				border-bottom: 2px solid #D3D3D3;
+				text-align:left;
+				font:normal normal bold 14px arial;
+				color: #808080;
+				letter-spacing: 0;
+				
+			}
+
+			body div div aside #contenedorBarraLateral{
+				
+			}
+			body div div aside div .aside_div_ul{
+				padding: 10px 0;
+				
+			}
+				body div div aside div ul .aside_div_ul_li{
+					list-style-type: none;
+					padding: 10px 0;
+												
+				}
+					body div div aside div ul li .aside_div_ul_li_a{
+					display: block;
+					text-decoration: none;
+					padding:10px 20px;
+					text-align:left;
+					font:normal normal normal 14px arial;
+					color: #808080;
+					letter-spacing: 0;
+					
+					}
+					body div div aside div ul li .aside_div_ul_li_a:hover{
+						background-color: #EEEEEE;
+						color: black;
+					}
+									
+					body div div aside div ul li .aside_div_ul_li_ul{
+						position:absolute;
+						visibility: hidden;
+						margin-top: -47px;
+						margin-left: 238px;
+						border-left: 1.3px solid #DDDDDD;
+						padding-left: 5px;
+						height: 0;
+						width: 240px;
+						background-color: white;
+						
+						list-style-type: none;
+					}
+					body div div aside div ul .aside_div_ul_li:hover ul{
+						visibility: visible;
+						height: 131px;
+						overflow: auto;
+						
+							-moz-transition: 0.3s;
+							-ms-transition: 0.3s;
+							-o-transition: 0.3s;
+							-webkit-transition: 0.3s;
+							transition: 0.3s;
+							-moz-transition-delay: 0.5s;
+							-ms-transition-delay: 0.5s;
+							-o-transition-delay: 0.5s;
+							-webkit-transition-delay: 0.5s;
+							transition-delay: 0.5s;
+					}
+
+						body div aside div ul li ul .contenedorDesplegableLateral{
+							padding: 10px 0;
+							border:1.5px solid #D3D3D3;
+							
+						}
+						body div aside div ul li ul .aside_div_ul_li_ul_li{
+							
+						}
+							body div aside div ul li ul li .aside_div_ul_li_ul_li_a{
+								display: block;
+								text-decoration: none;
+								text-align:center;
+								font:normal normal normal 14px arial;
+								color: #808080;
+								letter-spacing: 0;
+								padding: 10px;
+								
+							}
+							body div aside div ul li ul li .aside_div_ul_li_ul_li_a:hover{
+								background-color: #EEEEEE;
+								color: black;
+							}
+	/********************************/
+	/****FIN CONTENIDO LATERAL****/
+	/********************************/
+
+
+	/**********************************/
+	/****INICIO CONTENIDO PRINCIPAL****/
+	/**********************************/		
+	body section{
+		
+		
+		-moz-flex-grow: 1;
+		-ms-flex-grow: 1;
+		-o-flex-grow: 1;
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+		
+		-moz-flex-shrink: 1;
+		-ms-flex-shrink: 1;
+		-o-flex-shrink: 1;
+		-webkit-flex-shrink: 1;
+		flex-shrink: 1;
+	}
+		body section #idSeccionProductos{
+			float: left;
+			margin:11.3px 0 0 10px;
+			padding:10px 10px 10px 0;
+			font:normal normal normal 14px arial;
+			color: #808080;
+			
+		}
+
+		body section #idOrdenarProductos{
+			float: right;
+			margin:10px 0 5px 10px;
+			padding:10px;
+			font:normal normal normal 14px arial;
+			color: #808080;
+			border:1.3px solid #DDDDDD;
+			border-radius:3px;
+			background-color: #FAFAFA;
+			
+		}
+
+		body section article{
+			clear: both;
+			margin:0px 0 10px 10px;
+			border:1.3px solid #DDDDDD;
+			border-radius:3px;
+			box-shadow: 0 2px 2px #E5E5E5;
+			background-color: #FAFAFA;
+			
+
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: -webkit-flex;
+			display: flex;
+
+			justify-content:space-between;
+		}
+		body section article:hover{
+			border:1.3px solid #CACACA;
+			box-shadow: 0 4px 4px #DBDBDB;
+		}
+			body section article figure{
+				height: 200px;
+				margin:0;
+				padding:0;
+				border-radius:3px 0 0 3px;
+				
+			}
+				body section article figure img{
+					border-radius:3px 0 0 3px;
+					cursor: pointer;
+					
+				}
+
+				.contenedorDatosArticulos a{
+					display: block;
+					text-decoration: none;
+					margin:20px;
+					color: #575757;
+					
+				}
+				.contenedorDatosArticulos a:hover{
+					color:black;
+				}
+
+				.contenedorDatosArticulos .classAloeNombres{
+					clear:both;
+					margin:10px 0;
+					text-align:center;
+					font:normal normal bold 20px arial;
+					letter-spacing: 0;
+					
+				}
+
+				.contenedorDatosArticulos .classAloeDescripciones{
+					margin:10px 0;
+					text-align:center;
+					font:normal normal normal 14px arial;
+					letter-spacing: 0;
+					
+				}
+
+				.contenedorComprasArticulos{
+					margin:20px 0;
+					padding:10px;
+					border-left: 2px solid #D3D3D3;
+					
+				}
+
+				.contenedorComprasArticulos .classAloePrecios{
+					margin:63px 0 10px;
+					text-align:center;
+					font:normal normal bold 20px arial;
+					color: green;
+					letter-spacing: 0;
+					
+				}
+				.contenedorComprasArticulos .classAloeComprar a{
+					display: block;
+					text-decoration: none;
+					margin: 0;
+					padding:10px;
+					background-color:green;
+					border-radius:3px;
+					text-align:center;
+					font:normal normal bold 20px arial;
+					color: white;
+					letter-spacing: 0;
+				}
+				.contenedorComprasArticulos .classAloeComprar a:hover{
+					background-color: #005A00;
+				}
+/******************/
+/****FIN CUERPO****/
+/******************/
+
+
+/******************/
+/****INICIO PIE****/
+/******************/
+	body footer{
+		background-color: #F4F4F4;
+		padding: 10px;
+		clear: both;
+	}
+		body footer ul{
+			overflow: auto;
+			
+			padding: 10px;
+		}
+			body footer ul li{
+				float:right;
+				margin-left: 5px;
+				list-style-type: none;
+				background-color:white;
+			}
+
+		body footer h2{
+			background-color: green;
+			margin: 10px;
+		}
+
+		body footer p{
+			
+			margin: 10px;
+		}
+/***************/
+/****FIN PIE****/
+/***************/
+
+
+
+
+/*********************/
+/****INICIO ICONOS****/
+/*********************/
+body div div ul li a .icon-user{
+	margin-right: 5px;
+}
+
+body div div ul li a .icon-shopping-bag{
+	margin-right: 5px;
+}
+
+body div header h2 a .icon-search{
+	float: right;
+	color: green;
+}
+
+body div nav div ul li a .icon-home2{
+	margin-right: 20px;
+}
+
+
+body div nav div ul li a .icon-shopping-cart{
+	margin-right: 20px;
+	float: left;
+}
+
+body div nav div ul li a .icon-chevron-down{
+	display: block;
+	float: left;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+
+body div nav div ul li a .icon-leaf{
+	margin-right: 20px;
+}
+
+body div nav div ul li a .icon-old-phone{
+	margin-right: 20px;
+}
+body div div #idMapa .icon-location{
+	margin-right: 8px;
+}
+body div div aside ul li a .icon-chevron-right{
+	float: right;
+	margin-top: 2px;
+	margin-right: 15px;
+}
+
+body section #idOrdenarProductos .icon-chevron-down{
+	float: left;
+	margin-top: 2px;
+	margin-right: 10px;
+}
+
+body section #idOrdenarProductos .icon-sort-amount-desc{
+	float: right;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+/******************/
+/****FIN ICONOS****/
+/******************/
+
+
+
+/********************************/		/*también puedo poner (min-width:) and (max-width: 320px)*/
+/****INICIO DISEÑO RESPONSIVE****/		/*qué es @media only wide*/
+/********************************/
+
+
+/******************************************************************************************************/
+/***************************************EMPIEZA DE 769px A 991px***************************************/
+/******************************************************************************************************/
+@media only screen and (max-width: 991px){
+	/*#idMapa{
+		width: 100%;
+		height: auto;
+	}*/
+	
+
+	/***********************************/
+	/****EMPIEZA CONTENEDOR CABECERA****/
+	/***********************************/
+		/***************************************/
+		/****INICIO ESQUINA SUPERIOR DERECHA****/
+		/***************************************/
+
+		/************************************/
+		/****FIN ESQUINA SUPERIOR DERECHA****/
+		/************************************/
+
+
+		/*********************/
+		/****INICIO HEADER****/
+		/*********************/
+			body div div header h1{
+				margin:23px 0;
+					
+			}
+				body div div header h1 a{
+					font:normal normal bold 40px arial;
+				}
+
+			body div div header h2{
+				margin: 25px 0;
+				font:normal normal normal 16px arial;
+			}
+
+				body div div header h2 #idTextoBuscar{
+					margin: 12px 0 0 15px;
+				}
+
+				body div div header h2 a{
+					padding: 8px;
+				}
+		/******************/
+		/****FIN HEADER****/
+		/******************/
+
+
+	/******************************/
+	/****EMPIEZA BARRA SUPERIOR****/
+	/******************************/
+		#idPortada{
+			margin-right:30px;
+		}
+		#idExplotacion{
+			margin-right:30px;
+		}
+		#idTienda{
+			margin-right:30px;
+		}
+				#arregloCarrito{
+					float: left;
+				}
+				#arregloCarrito2{
+					overflow: auto;
+					width: 162px;
+					margin: 0 auto;
+				}
+		#idContacto{
+		}
+			body div div nav div .nav_div_ul_li_a{
+				padding:10px;
+				font:normal normal normal 15px arial;
+			}
+			body div div nav div .nav_div_ul_li_ul{
+				margin-top: 4px;
+				padding-top: 10px;
+				height: 0;
+			}
+			body div div nav div .nav_div_ul_li:hover ul{
+				height: 167px;
+			}
+				body div div nav div .contenedorDesplegableSuperior{
+					padding: 10px 0;
+				}
+						body div div nav div .nav_div_ul_li_ul_li_a{
+							font:normal normal normal 14px arial;
+							padding: 10px;
+							margin-left: 0.75px;
+						}
+	/******************************/
+	/****TERMINA BARRA SUPERIOR****/
+	/******************************/
+
+/***********************************/
+/****TERMINA CONTENEDOR CABECERA****/
+/***********************************/
+
+
+/*********************/
+/****INICIO CUERPO****/
+/*********************/
+body #contenedorCuerpo{
+	margin: 10px auto;
+	padding: 0 10px;
+}
+
+	/********************************/
+	/****INICIO CONTENIDO LATERAL****/
+	/********************************/
+	body div #contenedorLateral{
+		width:200px;
+	}
+
+		body div div #idMapa{
+			margin:10px 0 0;
+			padding:30px 10px;
+			font:normal normal normal 14px arial;
+		}
+
+		body div div #idBarraLateral{
+			margin:10px 0;
+		}
+			body div div aside #tituloBarraLateral{
+				width: auto;
+				margin:20px 20px 0;
+				padding:10px 0;
+				text-align:left;
+				font:normal normal bold 14px arial;
+			}
+			body div div aside div .aside_div_ul{
+				padding: 10px 0;
+			}
+				body div div aside div ul .aside_div_ul_li{
+					padding: 10px 0;
+				}
+					body div div aside div ul li .aside_div_ul_li_a{
+					padding:10px 20px;
+					text-align:left;
+					font:normal normal normal 14px arial;
+					}
+									
+					body div div aside div ul li .aside_div_ul_li_ul{
+						margin-top: -47px;
+						margin-left: 198px;
+						padding-left: 5px;
+						height: 0;
+						width: 240px;
+					}
+					body div div aside div ul .aside_div_ul_li:hover ul{
+						height: 131px;
+					}
+						body div aside div ul li ul .contenedorDesplegableLateral{
+							padding: 10px 0;
+						}
+							body div aside div ul li ul li .aside_div_ul_li_ul_li_a{
+								font:normal normal normal 14px arial;
+								padding: 10px;
+							}
+	/********************************/
+	/****FIN CONTENIDO LATERAL****/
+	/********************************/
+
+
+	/**********************************/
+	/****INICIO CONTENIDO PRINCIPAL****/
+	/**********************************/		
+		body section #idSeccionProductos{
+			margin:11.3px 0 0 10px;
+			padding:10px 10px 10px 0;
+			font:normal normal normal 14px arial;
+		}
+
+		body section #idOrdenarProductos{
+			margin:10px 0 5px 10px;
+			padding:10px;
+			font:normal normal normal 14px arial;
+		}
+
+		body section article{
+			margin:0px 0 10px 10px;
+		}
+			body section article figure{
+				height: 180px;
+				margin:0;
+				padding:0;
+				border-radius:3px 0 0 3px;
+			}
+				body section article figure img{
+					border-radius:3px 0 0 3px;
+					width: 220px;
+					height: 180px;
+				}
+
+				.contenedorDatosArticulos a{
+					margin:20px;
+				}
+				.contenedorDatosArticulos .classAloeNombres{
+					margin:10px 0;
+					font:normal normal bold 16px arial;
+				}
+				.contenedorDatosArticulos .classAloeDescripciones{
+					margin:10px 0;
+					font:normal normal normal 14px arial;
+				}
+
+				.contenedorComprasArticulos{
+					margin:20px 0;
+					padding:10px;
+				}
+
+				.contenedorComprasArticulos .classAloePrecios{
+					margin:48px 0 10px;
+					font:normal normal bold 18px arial;
+				}
+				.contenedorComprasArticulos .classAloeComprar a{
+					margin: 0;
+					padding:10px;
+					font:normal normal bold 18px arial;
+				}
+/******************/
+/****FIN CUERPO****/
+/******************/
+
+
+/******************/
+/****INICIO PIE****/
+/******************/
+	body footer{
+		background-color: #F4F4F4;
+		padding: 10px;
+		clear: both;
+	}
+		body footer ul{
+			overflow: auto;
+			
+			padding: 10px;
+		}
+			body footer ul li{
+				float:right;
+				margin-left: 5px;
+				list-style-type: none;
+				background-color:white;
+			}
+
+		body footer h2{
+			background-color: green;
+			margin: 10px;
+		}
+
+		body footer p{
+			
+			margin: 10px;
+		}
+/***************/
+/****FIN PIE****/
+/***************/
+}
+
+/******************************************************************************************************/
+/***************************************TERMINA DE 769px A 991px***************************************/
+/******************************************************************************************************/
+
+
+
+
+
+/******************************************************************************************************/
+/***************************************EMPIEZA DE 601px A 768px***************************************/
+/******************************************************************************************************/
+
+@media only screen and (max-width: 768px){
+	/*#idMapa{
+		width: 100%;
+		height: auto;
+	}*/
+	body div div header #menu{
+		position: absolute;
+		display: block;
+		left: 40px;
+		top: 40px;
+		font-size: 30px;
+		color: #808080;
+	}
+	
+/******************************/
+/****EMPIEZA FONDO CABECERA****/
+/******************************/
+body #fondoCabecera{
+	position: fixed;
+	margin: 0;
+	width: 100%;
+}
+	
+	/***********************************/
+	/****EMPIEZA CONTENEDOR CABECERA****/
+	/***********************************/
+		/***************************************/
+		/****INICIO ESQUINA SUPERIOR DERECHA****/
+		/***************************************/
+
+		/************************************/
+		/****FIN ESQUINA SUPERIOR DERECHA****/
+		/************************************/
+
+
+		/*********************/
+		/****INICIO HEADER****/
+		/*********************/
+		body div div header{
+			padding: 10px 0;
+			
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			-webkit-flex-direction: column;
+			
+			flex-direction: column;
+			align-items: center;
+		}
+			body div div header h1{
+				margin: auto;
+			}
+				body div div header h1 a{
+					padding: 0 10px;
+					font:normal normal bold 40px arial;
+				}
+
+			body div div header h2{
+				max-width: none;
+				margin: 10px 0 0;
+				font:normal normal normal 16px arial;
+				
+				align-self: stretch;
+			}
+
+				body div div header h2 #idTextoBuscar{
+					float: left;
+				}
+
+				body div div header h2 a{
+					float: right;
+					padding: 8px;
+				}
+		/******************/
+		/****FIN HEADER****/
+		/******************/
+
+
+	/******************************/
+	/****EMPIEZA BARRA SUPERIOR****/
+	/******************************/
+	body div div nav{
+		display: none;
+	}
+		#idPortada{
+			margin-right:30px;
+		}
+		#idExplotacion{
+			margin-right:30px;
+		}
+		#idTienda{
+			margin-right:30px;
+		}
+				#arregloCarrito{
+					float: left;
+				}
+				#arregloCarrito2{
+					overflow: auto;
+					width: 162px;
+					margin: 0 auto;
+				}
+		#idContacto{
+		}
+			body div div nav div .nav_div_ul_li_a{
+				padding:10px;
+				font:normal normal normal 15px arial;
+			}
+			body div div nav div .nav_div_ul_li_ul{
+				margin-top: 4px;
+				padding-top: 10px;
+				height: 0;
+			}
+			body div div nav div .nav_div_ul_li:hover ul{
+				height: 167px;
+			}
+				body div div nav div .contenedorDesplegableSuperior{
+					padding: 10px 0;
+				}
+						body div div nav div .nav_div_ul_li_ul_li_a{
+							font:normal normal normal 14px arial;
+							padding: 10px;
+							margin-left: 0.75px;
+						}
+	/******************************/
+	/****TERMINA BARRA SUPERIOR****/
+	/******************************/
+
+/***********************************/
+/****TERMINA CONTENEDOR CABECERA****/
+/***********************************/
+
+
+/*********************/
+/****INICIO CUERPO****/
+/*********************/
+body #contenedorCuerpo{
+	margin: 0 auto 10px;
+	padding: 140px 10px 0;
+}
+
+	/********************************/
+	/****INICIO CONTENIDO LATERAL****/
+	/********************************/
+	body div #contenedorLateral{
+		width:200px;
+		display: none;
+	}
+
+		body div div #idMapa{
+			margin:10px 0 0;
+			padding:30px 10px;
+			font:normal normal normal 14px arial;
+		}
+
+		body div div #idBarraLateral{
+			margin:10px 0;
+		}
+			body div div aside #tituloBarraLateral{
+				width: auto;
+				margin:20px 20px 0;
+				padding:10px 0;
+				text-align:left;
+				font:normal normal bold 14px arial;
+			}
+			body div div aside div .aside_div_ul{
+				padding: 10px 0;
+			}
+				body div div aside div ul .aside_div_ul_li{
+					padding: 10px 0;
+				}
+					body div div aside div ul li .aside_div_ul_li_a{
+					padding:10px 20px;
+					text-align:left;
+					font:normal normal normal 14px arial;
+					}
+									
+					body div div aside div ul li .aside_div_ul_li_ul{
+						margin-top: -47px;
+						margin-left: 198px;
+						padding-left: 5px;
+						height: 0;
+						width: 240px;
+					}
+					body div div aside div ul .aside_div_ul_li:hover ul{
+						height: 131px;
+					}
+						body div aside div ul li ul .contenedorDesplegableLateral{
+							padding: 10px 0;
+						}
+							body div aside div ul li ul li .aside_div_ul_li_ul_li_a{
+								font:normal normal normal 14px arial;
+								padding: 10px;
+							}
+	/********************************/
+	/****FIN CONTENIDO LATERAL****/
+	/********************************/
+
+
+	/**********************************/
+	/****INICIO CONTENIDO PRINCIPAL****/
+	/**********************************/		
+		body section #idSeccionProductos{
+			margin:11.3px 0 0 10px;
+			padding:10px 0 10px 0;
+			font:normal normal normal 14px arial;
+		}
+
+		body section #idOrdenarProductos{
+			margin:10px 0 5px 10px;
+			padding:10px;
+			font:normal normal normal 14px arial;
+		}
+
+		body section article{
+			margin:0px 0 10px 0;
+		}
+			body section article figure{
+				height: 160px;
+				margin:0;
+				padding:0;
+				border-radius:3px 0 0 3px;
+			}
+				body section article figure img{
+					border-radius:3px 0 0 3px;
+					width: 200px;
+					height: 160px;
+				}
+
+				.contenedorDatosArticulos a{
+					margin:20px;
+				}
+				.contenedorDatosArticulos .classAloeNombres{
+					margin:10px 0;
+					font:normal normal bold 16px arial;
+				}
+				.contenedorDatosArticulos .classAloeDescripciones{
+					margin:10px 0;
+					font:normal normal normal 14px arial;
+				}
+
+				.contenedorComprasArticulos{
+					margin:20px 0;
+					padding:10px;
+				}
+
+				.contenedorComprasArticulos .classAloePrecios{
+					margin:28px 0 10px;
+					font:normal normal bold 18px arial;
+				}
+				.contenedorComprasArticulos .classAloeComprar a{
+					margin: 0;
+					padding:10px;
+					font:normal normal bold 18px arial;
+				}
+/******************/
+/****FIN CUERPO****/
+/******************/
+
+
+/******************/
+/****INICIO PIE****/
+/******************/
+	body footer{
+		background-color: #F4F4F4;
+		padding: 10px;
+		clear: both;
+	}
+		body footer ul{
+			overflow: auto;
+			
+			padding: 10px;
+		}
+			body footer ul li{
+				float:right;
+				margin-left: 5px;
+				list-style-type: none;
+				background-color:white;
+			}
+
+		body footer h2{
+			background-color: green;
+			margin: 10px;
+		}
+
+		body footer p{
+			
+			margin: 10px;
+		}
+/***************/
+/****FIN PIE****/
+/***************/
+}
+
+/******************************************************************************************************/
+/***************************************TERMINA DE 601px A 768px***************************************/
+/******************************************************************************************************/
+
+
+
+
+
+/******************************************************************************************************/
+/***************************************EMPIEZA DE 481px A 600px***************************************/
+/******************************************************************************************************/
+@media only screen and (max-width: 600px){
+	
+	body div div header h1 a{
+		font:normal normal bold 30px arial;
+	}
+	
+	body div div header #menu{
+		position: absolute;
+		display: block;
+		left: 40px;
+		top: 36px;
+		font-size: 30px;
+		color: #808080;	
+	}
+	
+	
+	body section article{
+			
+			height: 170px;
+			padding: 0;
+			margin: 10px 0;
+		
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: -webkit-flex;
+			display: flex;
+		
+			flex-flow: column wrap;
+			justify-content: space-between;
+			align-items: stretch;
+		}
+			body section article figure{
+				
+				width: 200px;
+				height: 170px;
+				padding: 0;
+				margin: 0;
+			}
+				body section article figure img{
+					
+					
+					width: 200px;
+					height: 170px;
+					padding: 0;
+					margin: 0;
+				}
+
+				.contenedorDatosArticulos{
+					
+					width: 52%;
+					padding: 0;
+					margin: 0;
+					
+					
+					-moz-flex-grow: 1;
+					-ms-flex-grow: 1;
+					-o-flex-grow: 1;
+					-webkit-flex-grow: 1;
+					flex-grow: 1;
+
+					-moz-flex-shrink: 1;
+					-ms-flex-shrink: 1;
+					-o-flex-shrink: 1;
+					-webkit-flex-shrink: 1;
+					flex-shrink: 1;
+					flex-basis: 60%;
+					/*order: 2;*/
+				}
+				.contenedorDatosArticulos a{
+					
+					padding: 0;
+					margin: 10px 0 0 0;
+					
+				}
+				.contenedorDatosArticulos .classAloeNombres{
+					
+					display: block;
+					padding: 0;
+					margin: 0 0 10px;;
+				}
+
+				.contenedorDatosArticulos .classAloeDescripciones{
+					
+					display: block;
+					padding: 0;
+					margin: 0;
+				}
+
+				.contenedorComprasArticulos{
+					
+					width: 52%;
+					padding:0;
+					margin: 0;
+					border-top: 2px solid #D3D3D3;
+					border-left: none;
+					overflow: auto;
+					
+					-moz-flex-grow: 1;
+					-ms-flex-grow: 1;
+					-o-flex-grow: 1;
+					-webkit-flex-grow: 1;
+					flex-grow: 1;
+
+					-moz-flex-shrink: 1;
+					-ms-flex-shrink: 1;
+					-o-flex-shrink: 1;
+					-webkit-flex-shrink: 1;
+					flex-shrink: 1;
+					flex-basis: 25%;
+					
+					/*order: 3;*/
+				}
+
+				.contenedorComprasArticulos .classAloePrecios{
+					float: left;
+					padding: 0;
+					margin: 18px 0 0 20px;
+					font:normal normal bold 14px arial;
+				}
+				.contenedorComprasArticulos .classAloeComprar a{
+					float: right;
+					width: 70px;
+					padding: 10px 40px;
+					margin: 9px 0 0;
+					font:normal normal bold 14px arial;
+				}
+}
+/******************************************************************************************************/
+/***************************************TERMINA DE 481px A 600px***************************************/
+/******************************************************************************************************/
+
+
+
+
+/******************************************************************************************************/
+/***************************************EMPIEZA DE 376px A 480px***************************************/
+/******************************************************************************************************/
+@media only screen and (max-width: 480px){
+	
+		/***************************************/
+		/****INICIO ESQUINA SUPERIOR DERECHA****/
+		/***************************************/	
+	
+			body div div header #menu{
+				left: 40px;
+				top: 10px;
+				font-size: 30px;
+			}
+	
+			body div div ul li a .textosEsquina{
+				display: none;
+			}
+	
+			body div div ul li a #idIconoEsquina1{
+				position: absolute;
+				right: 25px;
+				top: 13px;
+				font-size: 25px;
+			}
+	
+			body div div ul li a #idIconoEsquina2{
+				position: absolute;
+				right: 55px;
+				top: 13px;
+				font-size: 25px;
+			}
+		
+		body div div header{
+			padding-top: 5px;
+		}
+		
+		body div div header h1 a{
+			font-size: 20px
+		}
+	
+body #contenedorCuerpo{
+	margin: 0 auto 10px;
+	padding: 100px 10px 0;
+	}
+	body section #idSeccionProductos{
+			/*margin:11.3px 0 0 10px;
+			padding:10px 10px 10px 0;*/
+			font:normal normal normal 12px arial;
+		}
+
+		body section #idOrdenarProductos{
+			/*margin:10px 0 5px 10px;
+			padding:10px;*/
+			font:normal normal normal 12px arial;
+		}
+		body section article{
+			height: 125px;
+			border-radius: 0;
+			
+	}
+			body section article figure{
+				
+				margin: 5px;
+				width: 100px;
+				height: 100px;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+				body section article figure img{
+					width: 100px;
+					height: 100px;
+					padding: 0;
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+					margin: 0;
+				}
+				.contenedorDatosArticulos{
+					width: 63%;
+					padding: 0;
+					margin: 0;
+					
+					flex-basis: 60%;
+				}
+				.contenedorDatosArticulos a{
+					
+					padding: 0;
+					margin: 5px 0 0 0;
+				}
+	
+				.contenedorComprasArticulos{
+					width: 63%;
+					
+					flex-basis: 25%;
+				}
+	
+				.contenedorDatosArticulos .classAloeNombres{
+					font:normal normal bold 14px arial;
+				}
+
+				.contenedorDatosArticulos .classAloeDescripciones{
+					font:normal normal normal 12px arial;
+				}
+
+				.contenedorComprasArticulos .classAloePrecios{
+					margin: 11px 0 0 15px;
+					font:normal normal bold 12px arial;
+				}
+				.contenedorComprasArticulos .classAloeComprar a{
+					width: 70px;
+					padding: 5px 30px;
+					margin: 5px 0 0;
+					font:normal normal bold 14px arial;
+				}
+}	
+/******************************************************************************************************/
+/***************************************TERMINA DE 376px A 480px***************************************/
+/******************************************************************************************************/
+
+	@media only screen and (max-width: 375px){
+
+				
+	
+}
+/******************************************************************************************************/
+/***************************************TERMINA DE 376px A 480px***************************************/
+/******************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
