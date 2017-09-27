@@ -1543,7 +1543,7 @@ body #contenedorCuerpo{
 		/***************************************/	
 	
 			body div div header #menu{
-				left: 40px;
+				left: 20px;
 				top: 10px;
 				font-size: 30px;
 			}
@@ -1554,17 +1554,18 @@ body #contenedorCuerpo{
 	
 			body div div ul li a #idIconoEsquina1{
 				position: absolute;
-				right: 25px;
+				right: 10px;
 				top: 13px;
 				font-size: 25px;
 			}
 	
 			body div div ul li a #idIconoEsquina2{
 				position: absolute;
-				right: 55px;
+				right: 40px;
 				top: 13px;
 				font-size: 25px;
 			}
+			
 		
 		body div div header{
 			padding-top: 5px;
@@ -1579,15 +1580,15 @@ body #contenedorCuerpo{
 	padding: 100px 10px 0;
 	}
 	body section #idSeccionProductos{
-			/*margin:11.3px 0 0 10px;
-			padding:10px 10px 10px 0;*/
-			font:normal normal normal 12px arial;
+			margin:7px 0 0;
+			padding:5px 5px 5px 0;
+			font:normal normal normal 11px arial;
 		}
 
 		body section #idOrdenarProductos{
-			/*margin:10px 0 5px 10px;
-			padding:10px;*/
-			font:normal normal normal 12px arial;
+			margin:5px 0 5px 10px;
+			padding:5px;
+			font:normal normal normal 11px arial;
 		}
 		body section article{
 			height: 125px;
@@ -1611,7 +1612,7 @@ body #contenedorCuerpo{
 					margin: 0;
 				}
 				.contenedorDatosArticulos{
-					width: 63%;
+					width: 60%;
 					padding: 0;
 					margin: 0;
 					
@@ -1624,13 +1625,14 @@ body #contenedorCuerpo{
 				}
 	
 				.contenedorComprasArticulos{
-					width: 63%;
+					width: 60%;
 					
 					flex-basis: 25%;
 				}
 	
 				.contenedorDatosArticulos .classAloeNombres{
 					font:normal normal bold 14px arial;
+					margin-bottom: 5px;
 				}
 
 				.contenedorDatosArticulos .classAloeDescripciones{
@@ -1642,7 +1644,7 @@ body #contenedorCuerpo{
 					font:normal normal bold 12px arial;
 				}
 				.contenedorComprasArticulos .classAloeComprar a{
-					width: 70px;
+					width: 50px;
 					padding: 5px 30px;
 					margin: 5px 0 0;
 					font:normal normal bold 14px arial;
