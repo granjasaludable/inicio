@@ -15,7 +15,7 @@ NO PONER NO PONER			display: none;			EL FLUJO NO RESPETA SU ANTERIOR HUECO, DESA
 							width: 230px;
 							border-top:2px solid #D3D3D3;
 							list-style-type: none;
-							background-color:greenyellow;
+							
 						}
 
 						ul li:hover ul{
@@ -51,7 +51,7 @@ NO PONER NO PONER			display: block;			NO COGE LA TRANSICIÓN
 	padding: 0;
 	font-size: 100%;
  	font-weight: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	text-decoration: none;
 	color: inherit;
 }
@@ -110,11 +110,13 @@ body #fondoCabecera{
 		body div div #contenedorEsquina{
 			overflow: auto;
 			padding-top: 10px;
+			
 		}
 			body div div ul .body_div_div_ul_li{
 				float: right;
 				margin-left: 15px;
 				list-style-type: none;
+				
 			}
 			
 				body div div ul li .body_div_div_ul_li_a{
@@ -123,6 +125,7 @@ body #fondoCabecera{
 					font:normal normal normal 13px arial;
 					color: #808080;
 					letter-spacing: 0.5px;
+					
 				}
 				body div div ul li .body_div_div_ul_li_a:hover{
 					color: black;
@@ -137,6 +140,7 @@ body #fondoCabecera{
 		/*********************/
 		body div div header{
 			
+			
 			display: -moz-flex;
 			display: -ms-flex;
 			display: -o-flex;
@@ -146,7 +150,12 @@ body #fondoCabecera{
 			justify-content:space-between;
 		}
 
+			body div div header #menu{
+				display: none;
+			}
+
 			body div div header h1{
+				
 				margin:24px 0;
 					
 					-moz-flex-grow: 0;
@@ -170,6 +179,7 @@ body #fondoCabecera{
 					font:normal normal bold 50px arial;
 					color: green;
 					letter-spacing: 0;
+					
 				}
 
 			body div div header h2{
@@ -183,6 +193,7 @@ body #fondoCabecera{
 				font:normal normal normal 18px arial;
 				color: #939393;
 				letter-spacing: 0;
+				background-color: white;
 				
 				-moz-flex-grow: 1;
 				-ms-flex-grow: 1;
@@ -205,6 +216,7 @@ body #fondoCabecera{
 				body div div header h2 #idTextoBuscar{
 					float: left;
 					margin: 14px 0 0 20px;
+					
 				}
 
 				body div div header h2 a{
@@ -212,6 +224,7 @@ body #fondoCabecera{
 					float: right;
 					padding: 10px;
 					margin: 3px 3px 2px 0;
+					
 				}
 		/******************/
 		/****FIN HEADER****/
@@ -228,9 +241,11 @@ body #fondoCabecera{
 	/******************************/
 	body div div nav{
 		clear: both;
+		
 	}
 
 	body div div nav #contenedorBarraSuperior{
+		
 	}
 	body div div nav div .nav_div_ul{
 		display: -moz-flex;
@@ -241,9 +256,9 @@ body #fondoCabecera{
 		
 		justify-content:space-between;
 		list-style-type: none;
+		
 	}
 		#idPortada{
-			min-width: 100px;
 			margin-right:30px;
 			
 			-moz-flex-grow: 1;
@@ -259,7 +274,6 @@ body #fondoCabecera{
 			flex-shrink: 1;
 		}
 		#idExplotacion{
-			min-width: 200px;
 			margin-right:30px;
 			
 			-moz-flex-grow: 1;
@@ -275,7 +289,10 @@ body #fondoCabecera{
 			flex-shrink: 1;
 		}
 		#idTienda{
+			position: relative;
+			
 			margin-right:30px;
+			border-bottom: 4px solid green;
 			
 			-moz-flex-grow: 1;
 			-ms-flex-grow: 1;
@@ -288,7 +305,6 @@ body #fondoCabecera{
 			-o-flex-shrink: 1;
 			-webkit-flex-shrink: 1;
 			flex-shrink: 1;
-			border-bottom: 4px solid green;
 		}
 				#arregloCarrito{
 					float: left;
@@ -297,6 +313,7 @@ body #fondoCabecera{
 					overflow: auto;
 					width: 162px;
 					margin: 0 auto;
+					
 					
 				}
 		#idContacto{
@@ -323,12 +340,12 @@ body #fondoCabecera{
 				font:normal normal normal 16px arial;
 				color: #808080;
 				letter-spacing: 0;
+				
 			}
 			body div div nav div .nav_div_ul_li_a:hover{
 				color: black;
 			}
 			#idLinkPortada{
-				margin-right:20px;
 				/*Para marcar en su página*/
 			}
 			#idLinkExplotacion{
@@ -339,7 +356,7 @@ body #fondoCabecera{
 				font:normal normal bold 16px arial;
 			}
 			#idLinkContacto{
-				margin-left:20px;
+				/*Para marcar en su página*/
 			}
 					
 			body div div nav div .nav_div_ul_li_ul{
@@ -348,14 +365,14 @@ body #fondoCabecera{
 				margin-top: 4px;
 				padding-top: 10px;
 				height: 0;
-				width: 230px;
+				width: 100%;
 				border-top:2px solid #D3D3D3;
 				list-style-type: none;
+				
 			}
 			body div div nav div .nav_div_ul_li:hover ul{
 				visibility: visible;
 				height: 167px;
-				overflow: auto;
 				
 					-moz-transition: 0.3s;
 					-ms-transition: 0.3s;
@@ -372,8 +389,10 @@ body #fondoCabecera{
 					padding: 10px 0;
 					border:1.5px solid #D3D3D3;
 					background-color: white;
+					
 				}
 					body div div nav div .nav_div_ul_li_ul_li{
+						
 					}
 						body div div nav div .nav_div_ul_li_ul_li_a{
 							display: block;
@@ -384,6 +403,7 @@ body #fondoCabecera{
 							letter-spacing: 0;
 							padding: 10px;
 							margin-left: 0.75px;
+							
 						}
 						body div div nav div .nav_div_ul_li_ul_li_a:hover{
 							background-color: #EEEEEE;
@@ -406,6 +426,7 @@ body #contenedorCuerpo{
 	margin: 10px auto;
 	padding: 0 10px;
 	
+	
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -421,6 +442,7 @@ body #contenedorCuerpo{
 	body div #contenedorLateral{
 		float: left;
 		width:240px;
+		
 		
 		-moz-flex-grow: 0;
 		-ms-flex-grow: 0;
@@ -445,6 +467,7 @@ body #contenedorCuerpo{
 			font:normal normal normal 14px arial;
 			color: #808080;
 			letter-spacing: 0;
+			
 		}
 
 		body div div #idBarraLateral{
@@ -452,6 +475,7 @@ body #contenedorCuerpo{
 			border:1.3px solid #DDDDDD;
 			border-radius:3px;
 			box-shadow: 0 2px 2px #E5E5E5;
+			
 		}
 			body div div aside #tituloBarraLateral{
 				width: auto;
@@ -462,16 +486,20 @@ body #contenedorCuerpo{
 				font:normal normal bold 14px arial;
 				color: #808080;
 				letter-spacing: 0;
+				
 			}
 
 			body div div aside #contenedorBarraLateral{
+				
 			}
 			body div div aside div .aside_div_ul{
 				padding: 10px 0;
+				
 			}
 				body div div aside div ul .aside_div_ul_li{
 					list-style-type: none;
 					padding: 10px 0;
+												
 				}
 					body div div aside div ul li .aside_div_ul_li_a{
 					display: block;
@@ -481,6 +509,7 @@ body #contenedorCuerpo{
 					font:normal normal normal 14px arial;
 					color: #808080;
 					letter-spacing: 0;
+					
 					}
 					body div div aside div ul li .aside_div_ul_li_a:hover{
 						background-color: #EEEEEE;
@@ -496,6 +525,7 @@ body #contenedorCuerpo{
 						padding-left: 5px;
 						height: 0;
 						width: 240px;
+						
 						list-style-type: none;
 					}
 					body div div aside div ul .aside_div_ul_li:hover ul{
@@ -521,6 +551,7 @@ body #contenedorCuerpo{
 							background-color: white;
 						}
 						body div aside div ul li ul .aside_div_ul_li_ul_li{
+							
 						}
 							body div aside div ul li ul li .aside_div_ul_li_ul_li_a{
 								display: block;
@@ -530,6 +561,7 @@ body #contenedorCuerpo{
 								color: #808080;
 								letter-spacing: 0;
 								padding: 10px;
+								
 							}
 							body div aside div ul li ul li .aside_div_ul_li_ul_li_a:hover{
 								background-color: #EEEEEE;
@@ -544,6 +576,7 @@ body #contenedorCuerpo{
 	/****INICIO CONTENIDO PRINCIPAL****/
 	/**********************************/		
 	body section{
+		
 		
 		-moz-flex-grow: 1;
 		-ms-flex-grow: 1;
@@ -563,6 +596,7 @@ body #contenedorCuerpo{
 			padding:10px 10px 10px 0;
 			font:normal normal normal 14px arial;
 			color: #808080;
+			
 		}
 
 		body section #idOrdenarProductos{
@@ -573,6 +607,7 @@ body #contenedorCuerpo{
 			color: #808080;
 			border:1.3px solid #DDDDDD;
 			border-radius:3px;
+			
 		}
 
 		body section article{
@@ -581,6 +616,7 @@ body #contenedorCuerpo{
 			border:1.3px solid #DDDDDD;
 			border-radius:3px;
 			box-shadow: 0 2px 2px #E5E5E5;
+			
 
 			display: -moz-flex;
 			display: -ms-flex;
@@ -596,13 +632,16 @@ body #contenedorCuerpo{
 			box-shadow: 0 4px 4px #DBDBDB;
 		}
 			body section article figure{
+				height: 200px;
 				margin:0;
 				padding:0;
-				border-radius:3px;
+				border-radius:3px 0 0 3px;
+				
 			}
 				body section article figure img{
 					border-radius:3px 0 0 3px;
 					cursor: pointer;
+					
 				}
 
 				.contenedorDatosArticulos a{
@@ -610,6 +649,7 @@ body #contenedorCuerpo{
 					text-decoration: none;
 					margin:20px;
 					color: #575757;
+					
 				}
 				.contenedorDatosArticulos a:hover{
 					color:black;
@@ -618,30 +658,34 @@ body #contenedorCuerpo{
 				.contenedorDatosArticulos .classAloeNombres{
 					clear:both;
 					margin:10px 0;
-					text-align:left;
+					text-align:center;
 					font:normal normal bold 20px arial;
 					letter-spacing: 0;
+					
 				}
 
 				.contenedorDatosArticulos .classAloeDescripciones{
 					margin:10px 0;
-					text-align:left;
+					text-align:center;
 					font:normal normal normal 14px arial;
 					letter-spacing: 0;
+					
 				}
 
 				.contenedorComprasArticulos{
 					margin:20px 0;
 					padding:10px;
 					border-left: 2px solid #D3D3D3;
+					
 				}
 
 				.contenedorComprasArticulos .classAloePrecios{
-					margin:64px 0 10px;
+					margin:63px 0 10px;
 					text-align:center;
 					font:normal normal bold 20px arial;
 					color: green;
 					letter-spacing: 0;
+					
 				}
 				.contenedorComprasArticulos .classAloeComprar a{
 					display: block;
@@ -673,7 +717,7 @@ body #contenedorCuerpo{
 	}
 		body footer ul{
 			overflow: auto;
-			background-color: blue;
+			
 			padding: 10px;
 		}
 			body footer ul li{
@@ -689,7 +733,7 @@ body #contenedorCuerpo{
 		}
 
 		body footer p{
-			background-color: orange;
+			
 			margin: 10px;
 		}
 /***************/
@@ -769,25 +813,716 @@ body section #idOrdenarProductos .icon-sort-amount-desc{
 /********************************/		/*también puedo poner (min-width:) and (max-width: 320px)*/
 /****INICIO DISEÑO RESPONSIVE****/		/*qué es @media only wide*/
 /********************************/
+
+
+/******************************************************************************************************/
+/***************************************EMPIEZA DE 769px A 991px***************************************/
+/******************************************************************************************************/
 @media only screen and (max-width: 991px){
 	/*#idMapa{
 		width: 100%;
 		height: auto;
 	}*/
-	body div div header h1 a{
-		background-color: aquamarine;
-	}
+	
+
+	/***********************************/
+	/****EMPIEZA CONTENEDOR CABECERA****/
+	/***********************************/
+		/***************************************/
+		/****INICIO ESQUINA SUPERIOR DERECHA****/
+		/***************************************/
+
+		/************************************/
+		/****FIN ESQUINA SUPERIOR DERECHA****/
+		/************************************/
+
+
+		/*********************/
+		/****INICIO HEADER****/
+		/*********************/
+			body div div header h1{
+				margin:23px 0;
+					
+			}
+				body div div header h1 a{
+					font:normal normal bold 40px arial;
+				}
+
+			body div div header h2{
+				margin: 25px 0;
+				font:normal normal normal 16px arial;
+			}
+
+				body div div header h2 #idTextoBuscar{
+					margin: 12px 0 0 15px;
+				}
+
+				body div div header h2 a{
+					padding: 8px;
+				}
+		/******************/
+		/****FIN HEADER****/
+		/******************/
+
+
+	/******************************/
+	/****EMPIEZA BARRA SUPERIOR****/
+	/******************************/
+		#idPortada{
+			margin-right:30px;
+		}
+		#idExplotacion{
+			margin-right:30px;
+		}
+		#idTienda{
+			margin-right:30px;
+		}
+				#arregloCarrito{
+					float: left;
+				}
+				#arregloCarrito2{
+					overflow: auto;
+					width: 162px;
+					margin: 0 auto;
+				}
+		#idContacto{
+		}
+			body div div nav div .nav_div_ul_li_a{
+				padding:10px;
+				font:normal normal normal 15px arial;
+			}
+			body div div nav div .nav_div_ul_li_ul{
+				margin-top: 4px;
+				padding-top: 10px;
+				height: 0;
+			}
+			body div div nav div .nav_div_ul_li:hover ul{
+				height: 167px;
+			}
+				body div div nav div .contenedorDesplegableSuperior{
+					padding: 10px 0;
+				}
+						body div div nav div .nav_div_ul_li_ul_li_a{
+							font:normal normal normal 14px arial;
+							padding: 10px;
+							margin-left: 0.75px;
+						}
+	/******************************/
+	/****TERMINA BARRA SUPERIOR****/
+	/******************************/
+
+/***********************************/
+/****TERMINA CONTENEDOR CABECERA****/
+/***********************************/
+
+
+/*********************/
+/****INICIO CUERPO****/
+/*********************/
+body #contenedorCuerpo{
+	margin: 10px auto;
+	padding: 0 10px;
 }
+
+	/********************************/
+	/****INICIO CONTENIDO LATERAL****/
+	/********************************/
+	body div #contenedorLateral{
+		width:200px;
+	}
+
+		body div div #idMapa{
+			margin:10px 0 0;
+			padding:30px 10px;
+			font:normal normal normal 14px arial;
+		}
+
+		body div div #idBarraLateral{
+			margin:10px 0;
+		}
+			body div div aside #tituloBarraLateral{
+				width: auto;
+				margin:20px 20px 0;
+				padding:10px 0;
+				text-align:left;
+				font:normal normal bold 14px arial;
+			}
+			body div div aside div .aside_div_ul{
+				padding: 10px 0;
+			}
+				body div div aside div ul .aside_div_ul_li{
+					padding: 10px 0;
+				}
+					body div div aside div ul li .aside_div_ul_li_a{
+					padding:10px 20px;
+					text-align:left;
+					font:normal normal normal 14px arial;
+					}
+									
+					body div div aside div ul li .aside_div_ul_li_ul{
+						margin-top: -47px;
+						margin-left: 198px;
+						padding-left: 5px;
+						height: 0;
+						width: 240px;
+					}
+					body div div aside div ul .aside_div_ul_li:hover ul{
+						height: 131px;
+					}
+						body div aside div ul li ul .contenedorDesplegableLateral{
+							padding: 10px 0;
+						}
+							body div aside div ul li ul li .aside_div_ul_li_ul_li_a{
+								font:normal normal normal 14px arial;
+								padding: 10px;
+							}
+	/********************************/
+	/****FIN CONTENIDO LATERAL****/
+	/********************************/
+
+
+	/**********************************/
+	/****INICIO CONTENIDO PRINCIPAL****/
+	/**********************************/		
+		body section #idSeccionProductos{
+			margin:11.3px 0 0 10px;
+			padding:10px 10px 10px 0;
+			font:normal normal normal 14px arial;
+		}
+
+		body section #idOrdenarProductos{
+			margin:10px 0 5px 10px;
+			padding:10px;
+			font:normal normal normal 14px arial;
+		}
+
+		body section article{
+			margin:0px 0 10px 10px;
+		}
+			body section article figure{
+				height: 180px;
+				margin:0;
+				padding:0;
+				border-radius:3px 0 0 3px;
+			}
+				body section article figure img{
+					border-radius:3px 0 0 3px;
+					width: 220px;
+					height: 180px;
+				}
+
+				.contenedorDatosArticulos a{
+					margin:20px;
+				}
+				.contenedorDatosArticulos .classAloeNombres{
+					margin:10px 0;
+					font:normal normal bold 16px arial;
+				}
+				.contenedorDatosArticulos .classAloeDescripciones{
+					margin:10px 0;
+					font:normal normal normal 14px arial;
+				}
+
+				.contenedorComprasArticulos{
+					margin:20px 0;
+					padding:10px;
+				}
+
+				.contenedorComprasArticulos .classAloePrecios{
+					margin:48px 0 10px;
+					font:normal normal bold 18px arial;
+				}
+				.contenedorComprasArticulos .classAloeComprar a{
+					margin: 0;
+					padding:10px;
+					font:normal normal bold 18px arial;
+				}
+/******************/
+/****FIN CUERPO****/
+/******************/
+
+
+/******************/
+/****INICIO PIE****/
+/******************/
+	body footer{
+		background-color: #F4F4F4;
+		padding: 10px;
+		clear: both;
+	}
+		body footer ul{
+			overflow: auto;
+			
+			padding: 10px;
+		}
+			body footer ul li{
+				float:right;
+				margin-left: 5px;
+				list-style-type: none;
+				background-color:white;
+			}
+
+		body footer h2{
+			background-color: green;
+			margin: 10px;
+		}
+
+		body footer p{
+			
+			margin: 10px;
+		}
+/***************/
+/****FIN PIE****/
+/***************/
+}
+
+/******************************************************************************************************/
+/***************************************TERMINA DE 769px A 991px***************************************/
+/******************************************************************************************************/
+
+
+
+
+
+/******************************************************************************************************/
+/***************************************EMPIEZA DE 601px A 768px***************************************/
+/******************************************************************************************************/
 
 @media only screen and (max-width: 768px){
 	/*#idMapa{
 		width: 100%;
 		height: auto;
 	}*/
-	body div div header h1 a{
-		background-color: orange;
+	body div div header #menu{
+		position: absolute;
+		display: block;
+		left: 40px;
+		top: 40px;
+		font-size: 30px;
+		color: #808080;
 	}
+	
+/******************************/
+/****EMPIEZA FONDO CABECERA****/
+/******************************/
+body #fondoCabecera{
+	position: fixed;
+	margin: 0;
+	width: 100%;
 }
+	
+	/***********************************/
+	/****EMPIEZA CONTENEDOR CABECERA****/
+	/***********************************/
+		/***************************************/
+		/****INICIO ESQUINA SUPERIOR DERECHA****/
+		/***************************************/
+
+		/************************************/
+		/****FIN ESQUINA SUPERIOR DERECHA****/
+		/************************************/
+
+
+		/*********************/
+		/****INICIO HEADER****/
+		/*********************/
+		body div div header{
+			padding: 10px 0;
+			
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			-webkit-flex-direction: column;
+			
+			flex-direction: column;
+			align-items: center;
+		}
+			body div div header h1{
+				margin: auto;
+			}
+				body div div header h1 a{
+					padding: 0 10px;
+					font:normal normal bold 40px arial;
+				}
+
+			body div div header h2{
+				max-width: none;
+				margin: 10px 0 0;
+				font:normal normal normal 16px arial;
+				
+				align-self: stretch;
+			}
+
+				body div div header h2 #idTextoBuscar{
+					float: left;
+				}
+
+				body div div header h2 a{
+					float: right;
+					padding: 8px;
+				}
+		/******************/
+		/****FIN HEADER****/
+		/******************/
+
+
+	/******************************/
+	/****EMPIEZA BARRA SUPERIOR****/
+	/******************************/
+	body div div nav{
+		display: none;
+	}
+		#idPortada{
+			margin-right:30px;
+		}
+		#idExplotacion{
+			margin-right:30px;
+		}
+		#idTienda{
+			margin-right:30px;
+		}
+				#arregloCarrito{
+					float: left;
+				}
+				#arregloCarrito2{
+					overflow: auto;
+					width: 162px;
+					margin: 0 auto;
+				}
+		#idContacto{
+		}
+			body div div nav div .nav_div_ul_li_a{
+				padding:10px;
+				font:normal normal normal 15px arial;
+			}
+			body div div nav div .nav_div_ul_li_ul{
+				margin-top: 4px;
+				padding-top: 10px;
+				height: 0;
+			}
+			body div div nav div .nav_div_ul_li:hover ul{
+				height: 167px;
+			}
+				body div div nav div .contenedorDesplegableSuperior{
+					padding: 10px 0;
+				}
+						body div div nav div .nav_div_ul_li_ul_li_a{
+							font:normal normal normal 14px arial;
+							padding: 10px;
+							margin-left: 0.75px;
+						}
+	/******************************/
+	/****TERMINA BARRA SUPERIOR****/
+	/******************************/
+
+/***********************************/
+/****TERMINA CONTENEDOR CABECERA****/
+/***********************************/
+
+
+/*********************/
+/****INICIO CUERPO****/
+/*********************/
+body #contenedorCuerpo{
+	margin: 0 auto 10px;
+	padding: 140px 10px 0;
+}
+
+	/********************************/
+	/****INICIO CONTENIDO LATERAL****/
+	/********************************/
+	body div #contenedorLateral{
+		width:200px;
+		display: none;
+	}
+
+		body div div #idMapa{
+			margin:10px 0 0;
+			padding:30px 10px;
+			font:normal normal normal 14px arial;
+		}
+
+		body div div #idBarraLateral{
+			margin:10px 0;
+		}
+			body div div aside #tituloBarraLateral{
+				width: auto;
+				margin:20px 20px 0;
+				padding:10px 0;
+				text-align:left;
+				font:normal normal bold 14px arial;
+			}
+			body div div aside div .aside_div_ul{
+				padding: 10px 0;
+			}
+				body div div aside div ul .aside_div_ul_li{
+					padding: 10px 0;
+				}
+					body div div aside div ul li .aside_div_ul_li_a{
+					padding:10px 20px;
+					text-align:left;
+					font:normal normal normal 14px arial;
+					}
+									
+					body div div aside div ul li .aside_div_ul_li_ul{
+						margin-top: -47px;
+						margin-left: 198px;
+						padding-left: 5px;
+						height: 0;
+						width: 240px;
+					}
+					body div div aside div ul .aside_div_ul_li:hover ul{
+						height: 131px;
+					}
+						body div aside div ul li ul .contenedorDesplegableLateral{
+							padding: 10px 0;
+						}
+							body div aside div ul li ul li .aside_div_ul_li_ul_li_a{
+								font:normal normal normal 14px arial;
+								padding: 10px;
+							}
+	/********************************/
+	/****FIN CONTENIDO LATERAL****/
+	/********************************/
+
+
+	/**********************************/
+	/****INICIO CONTENIDO PRINCIPAL****/
+	/**********************************/		
+		body section #idSeccionProductos{
+			margin:11.3px 0 0 10px;
+			padding:10px 0 10px 0;
+			font:normal normal normal 14px arial;
+		}
+
+		body section #idOrdenarProductos{
+			margin:10px 0 5px 10px;
+			padding:10px;
+			font:normal normal normal 14px arial;
+		}
+
+		body section article{
+			margin:0px 0 10px 0;
+		}
+			body section article figure{
+				height: 160px;
+				margin:0;
+				padding:0;
+				border-radius:3px 0 0 3px;
+			}
+				body section article figure img{
+					border-radius:3px 0 0 3px;
+					width: 200px;
+					height: 160px;
+				}
+
+				.contenedorDatosArticulos a{
+					margin:20px;
+				}
+				.contenedorDatosArticulos .classAloeNombres{
+					margin:10px 0;
+					font:normal normal bold 16px arial;
+				}
+				.contenedorDatosArticulos .classAloeDescripciones{
+					margin:10px 0;
+					font:normal normal normal 14px arial;
+				}
+
+				.contenedorComprasArticulos{
+					margin:20px 0;
+					padding:10px;
+				}
+
+				.contenedorComprasArticulos .classAloePrecios{
+					margin:28px 0 10px;
+					font:normal normal bold 18px arial;
+				}
+				.contenedorComprasArticulos .classAloeComprar a{
+					margin: 0;
+					padding:10px;
+					font:normal normal bold 18px arial;
+				}
+/******************/
+/****FIN CUERPO****/
+/******************/
+
+
+/******************/
+/****INICIO PIE****/
+/******************/
+	body footer{
+		background-color: #F4F4F4;
+		padding: 10px;
+		clear: both;
+	}
+		body footer ul{
+			overflow: auto;
+			
+			padding: 10px;
+		}
+			body footer ul li{
+				float:right;
+				margin-left: 5px;
+				list-style-type: none;
+				background-color:white;
+			}
+
+		body footer h2{
+			background-color: green;
+			margin: 10px;
+		}
+
+		body footer p{
+			
+			margin: 10px;
+		}
+/***************/
+/****FIN PIE****/
+/***************/
+}
+
+/******************************************************************************************************/
+/***************************************TERMINA DE 601px A 768px***************************************/
+/******************************************************************************************************/
+
+
+
+
+
+/******************************************************************************************************/
+/***************************************EMPIEZA DE 481px A 600px***************************************/
+/******************************************************************************************************/
+@media only screen and (max-width: 600px){
+	
+body div div header h1 a{
+	font:normal normal bold 30px arial;
+}
+	
+	
+	
+	
+	
+	body section article{
+			
+			height: 170px;
+			padding: 0;
+			margin: 10px 0;
+		
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: -webkit-flex;
+			display: flex;
+		
+			flex-flow: column wrap;
+			justify-content: space-between;
+			align-items: stretch;
+		}
+			body section article figure{
+				background-color:coral;
+				width: 200px;
+				height: 170px;
+				padding: 0;
+				margin: 0;
+			}
+				body section article figure img{
+					
+					
+					width: 200px;
+					height: 170px;
+					padding: 0;
+					margin: 0;
+				}
+
+				.contenedorDatosArticulos{
+					height: 50px;
+					width: 52%;
+					padding: 0;
+					margin: 0;
+					
+					
+					-moz-flex-grow: 1;
+					-ms-flex-grow: 1;
+					-o-flex-grow: 1;
+					-webkit-flex-grow: 1;
+					flex-grow: 1;
+
+					-moz-flex-shrink: 1;
+					-ms-flex-shrink: 1;
+					-o-flex-shrink: 1;
+					-webkit-flex-shrink: 1;
+					flex-shrink: 1;
+					flex-basis: 60%;
+					/*order: 2;*/
+				}
+				.contenedorDatosArticulos a{
+					
+					padding: 0;
+					margin: 10px 0 0 0;
+					
+				}
+				.contenedorDatosArticulos .classAloeNombres{
+					
+					display: block;
+					padding: 0;
+					margin: 0 0 10px;;
+				}
+
+				.contenedorDatosArticulos .classAloeDescripciones{
+					
+					display: block;
+					padding: 0;
+					margin: 0;
+				}
+
+				.contenedorComprasArticulos{
+					
+					height: 50px;
+					width: 52%;
+					padding:0;
+					margin: 0;
+					border-top: 2px solid #D3D3D3;
+					border-left: none;
+					overflow: auto;
+					
+					-moz-flex-grow: 1;
+					-ms-flex-grow: 1;
+					-o-flex-grow: 1;
+					-webkit-flex-grow: 1;
+					flex-grow: 1;
+
+					-moz-flex-shrink: 1;
+					-ms-flex-shrink: 1;
+					-o-flex-shrink: 1;
+					-webkit-flex-shrink: 1;
+					flex-shrink: 1;
+					flex-basis: 25%;
+					
+					/*order: 3;*/
+				}
+
+				.contenedorComprasArticulos .classAloePrecios{
+					float: left;
+					padding: 0;
+					margin: 18px 0 0 20px;
+					font:normal normal bold 14px arial;
+				}
+				.contenedorComprasArticulos .classAloeComprar a{
+					float: right;
+					width: 70px;
+					padding: 10px 40px;
+					margin: 9px 0 0;
+					font:normal normal bold 14px arial;
+				}
+}
+/******************************************************************************************************/
+/***************************************TERMINA DE 481px A 600px***************************************/
+/******************************************************************************************************/
+
+
+
+
+
 
 @media only screen and (max-width: 480px){
 	/*#idMapa{
@@ -795,7 +1530,7 @@ body section #idOrdenarProductos .icon-sort-amount-desc{
 		height: auto;
 	}*/
 	body div div header h1 a{
-		background-color: blue;
+		background-color: red;
 	}
 }
 
