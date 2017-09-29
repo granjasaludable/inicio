@@ -15,7 +15,7 @@ NO PONER NO PONER			display: none;			EL FLUJO NO RESPETA SU ANTERIOR HUECO, DESA
 							width: 230px;
 							border-top:2px solid #D3D3D3;
 							list-style-type: none;
-							
+							background-color:greenyellow;
 						}
 
 						ul li:hover ul{
@@ -99,7 +99,7 @@ body #fondoCabecera{
 	/****EMPIEZA CONTENEDOR CABECERA****/
 	/***********************************/
 	body div #contenedorCabecera{
-		
+		background-color: darkblue;
 		max-width: 1000px;
 		margin: 0 auto;
 		padding: 0 10px;
@@ -110,13 +110,13 @@ body #fondoCabecera{
 		body div div #contenedorEsquina{
 			overflow: auto;
 			padding-top: 10px;
-			
+			background-color: brown;
 		}
 			body div div ul .body_div_div_ul_li{
 				float: right;
 				margin-left: 15px;
 				list-style-type: none;
-				
+				background-color: orange;
 			}
 			
 				body div div ul li .body_div_div_ul_li_a{
@@ -125,7 +125,7 @@ body #fondoCabecera{
 					font:normal normal normal 13px arial;
 					color: #808080;
 					letter-spacing: 0.5px;
-					
+					background-color:yellow;
 				}
 				body div div ul li .body_div_div_ul_li_a:hover{
 					color: black;
@@ -143,7 +143,7 @@ body #fondoCabecera{
 		/****INICIO HEADER****/
 		/*********************/
 		body div div header{
-			
+			background-color:navajowhite;
 			
 			display: -moz-flex;
 			display: -ms-flex;
@@ -160,7 +160,7 @@ body #fondoCabecera{
 			}
 
 			body div div header h1{
-				
+				background-color: aquamarine;
 				margin:24px 0;
 					
 					-moz-flex-grow: 0;
@@ -184,7 +184,7 @@ body #fondoCabecera{
 					font:normal normal bold 50px arial;
 					color: green;
 					letter-spacing: 0;
-					
+					background-color: yellow;
 				}
 
 			body div div header h2{
@@ -221,7 +221,7 @@ body #fondoCabecera{
 				body div div header h2 #idTextoBuscar{
 					float: left;
 					margin: 14px 0 0 20px;
-					
+					background-color: blue;
 				}
 
 				body div div header h2 a{
@@ -229,7 +229,7 @@ body #fondoCabecera{
 					float: right;
 					padding: 10px;
 					margin: 3px 3px 2px 0;
-					
+					background-color: blue;
 				}
 		/******************/
 		/****FIN HEADER****/
@@ -246,11 +246,11 @@ body #fondoCabecera{
 	/******************************/
 	body div div nav{
 		clear: both;
-		
+		background-color: orange;
 	}
 
 	body div div nav #contenedorBarraSuperior{
-		
+		background-color: yellow;
 	}
 	body div div nav div .nav_div_ul{
 		display: -moz-flex;
@@ -261,7 +261,7 @@ body #fondoCabecera{
 		
 		justify-content:space-between;
 		list-style-type: none;
-		
+		background-color: blue;
 	}
 		#idPortada{
 			margin-right:30px;
@@ -295,7 +295,7 @@ body #fondoCabecera{
 		}
 		#idTienda{
 			position: relative;
-			
+			background-color: brown;
 			margin-right:30px;
 			border-bottom: 4px solid green;
 			
@@ -319,7 +319,7 @@ body #fondoCabecera{
 					width: 162px;
 					margin: 0 auto;
 					
-					
+					background-color: bisque;
 				}
 		#idContacto{
 			min-width: 100px;
@@ -345,7 +345,7 @@ body #fondoCabecera{
 				font:normal normal normal 16px arial;
 				color: #808080;
 				letter-spacing: 0;
-				
+				background-color:aqua;
 			}
 			body div div nav div .nav_div_ul_li_a:hover{
 				color: black;
@@ -365,17 +365,21 @@ body #fondoCabecera{
 			}
 					
 			body div div nav div .nav_div_ul_li_ul{
+				
+				display: none;
+				
+				
 				position:absolute;
-				visibility: hidden;
+				/*visibility: hidden;
+				height: 0;*/
 				margin-top: 4px;
 				padding-top: 10px;
-				height: 0;
 				width: 100%;
 				border-top:2px solid #D3D3D3;
 				list-style-type: none;
-				
+				background-color:greenyellow;
 			}
-			body div div nav div .nav_div_ul_li:hover ul{
+			/*body div div nav div .nav_div_ul_li:hover ul{
 				visibility: visible;
 				height: 167px;
 				
@@ -389,14 +393,14 @@ body #fondoCabecera{
 					-o-transition-delay: 0.5s;
 					-webkit-transition-delay: 0.5s;
 					transition-delay: 0.5s;
-			}
+			}*/
 				body div div nav div .contenedorDesplegableSuperior{
 					padding: 10px 0;
 					border:1.5px solid #D3D3D3;
 					background-color: white;
 				}
 					body div div nav div .nav_div_ul_li_ul_li{
-						
+						background-color: orange;
 					}
 						body div div nav div .nav_div_ul_li_ul_li_a{
 							display: block;
@@ -407,7 +411,7 @@ body #fondoCabecera{
 							letter-spacing: 0;
 							padding: 10px;
 							margin-left: 0.75px;
-							
+							background-color: yellow;
 						}
 						body div div nav div .nav_div_ul_li_ul_li_a:hover{
 							background-color: #EEEEEE;
@@ -429,7 +433,7 @@ body #contenedorCuerpo{
 	max-width: 1000px;
 	margin: 10px auto;
 	padding: 0 10px;
-	
+	background-color: red;
 	
 	display: -moz-flex;
 	display: -ms-flex;
@@ -446,7 +450,7 @@ body #contenedorCuerpo{
 	body div #contenedorLateral{
 		float: left;
 		width:240px;
-		
+		background-color: orange;
 		
 		-moz-flex-grow: 0;
 		-ms-flex-grow: 0;
@@ -490,20 +494,20 @@ body #contenedorCuerpo{
 				font:normal normal bold 14px arial;
 				color: #808080;
 				letter-spacing: 0;
-				
+				background-color: blue;
 			}
 
 			body div div aside #contenedorBarraLateral{
-				
+				background-color: purple;
 			}
 			body div div aside div .aside_div_ul{
 				padding: 10px 0;
-				
+				background-color: coral;
 			}
 				body div div aside div ul .aside_div_ul_li{
 					list-style-type: none;
 					padding: 10px 0;
-												
+					background-color: blue;							
 				}
 					body div div aside div ul li .aside_div_ul_li_a{
 					display: block;
@@ -513,7 +517,7 @@ body #contenedorCuerpo{
 					font:normal normal normal 14px arial;
 					color: #808080;
 					letter-spacing: 0;
-					
+					background-color:cornflowerblue;
 					}
 					body div div aside div ul li .aside_div_ul_li_a:hover{
 						background-color: #EEEEEE;
@@ -529,7 +533,7 @@ body #contenedorCuerpo{
 						padding-left: 5px;
 						height: 0;
 						width: 240px;
-						
+						background-color:purple;
 						list-style-type: none;
 					}
 					body div div aside div ul .aside_div_ul_li:hover ul{
@@ -555,7 +559,7 @@ body #contenedorCuerpo{
 							background-color: white;
 						}
 						body div aside div ul li ul .aside_div_ul_li_ul_li{
-							
+							background-color: yellow;
 						}
 							body div aside div ul li ul li .aside_div_ul_li_ul_li_a{
 								display: block;
@@ -565,7 +569,7 @@ body #contenedorCuerpo{
 								color: #808080;
 								letter-spacing: 0;
 								padding: 10px;
-								
+								background-color: blue;
 							}
 							body div aside div ul li ul li .aside_div_ul_li_ul_li_a:hover{
 								background-color: #EEEEEE;
@@ -580,7 +584,7 @@ body #contenedorCuerpo{
 	/****INICIO CONTENIDO PRINCIPAL****/
 	/**********************************/		
 	body section{
-		
+		background-color:navajowhite;
 		
 		-moz-flex-grow: 1;
 		-ms-flex-grow: 1;
@@ -600,7 +604,7 @@ body #contenedorCuerpo{
 			padding:10px 10px 10px 0;
 			font:normal normal normal 14px arial;
 			color: #808080;
-			
+			background-color:yellow;
 		}
 
 		body section #idOrdenarProductos{
@@ -639,12 +643,12 @@ body #contenedorCuerpo{
 				margin:0;
 				padding:0;
 				border-radius:3px 0 0 3px;
-				
+				background-color:blue;
 			}
 				body section article figure img{
 					border-radius:3px 0 0 3px;
 					cursor: pointer;
-					
+					background-color:cornflowerblue;
 				}
 
 				.contenedorDatosArticulos a{
@@ -652,7 +656,7 @@ body #contenedorCuerpo{
 					text-decoration: none;
 					margin:20px;
 					color: #575757;
-					
+					background-color:blue;
 				}
 				.contenedorDatosArticulos a:hover{
 					color:black;
@@ -664,7 +668,7 @@ body #contenedorCuerpo{
 					text-align:center;
 					font:normal normal bold 20px arial;
 					letter-spacing: 0;
-					
+					background-color:cornflowerblue;
 				}
 
 				.contenedorDatosArticulos .classAloeDescripciones{
@@ -672,14 +676,14 @@ body #contenedorCuerpo{
 					text-align:center;
 					font:normal normal normal 14px arial;
 					letter-spacing: 0;
-					
+					background-color:cornflowerblue;
 				}
 
 				.contenedorComprasArticulos{
 					margin:20px 0;
 					padding:10px;
 					border-left: 2px solid #D3D3D3;
-					
+					background-color:blue;
 				}
 
 				.contenedorComprasArticulos .classAloePrecios{
@@ -688,7 +692,7 @@ body #contenedorCuerpo{
 					font:normal normal bold 20px arial;
 					color: green;
 					letter-spacing: 0;
-					
+					background-color:cornflowerblue;
 				}
 				.contenedorComprasArticulos .classAloeComprar a{
 					display: block;
@@ -720,7 +724,7 @@ body #contenedorCuerpo{
 	}
 		body footer ul{
 			overflow: auto;
-			
+			background-color: blue;
 			padding: 10px;
 		}
 			body footer ul li{
@@ -731,12 +735,12 @@ body #contenedorCuerpo{
 			}
 
 		body footer h2{
-			
+			background-color: green;
 			margin: 10px;
 		}
 
 		body footer p{
-			
+			background-color: orange;
 			margin: 10px;
 		}
 /***************/
@@ -818,7 +822,7 @@ body section #idOrdenarProductos .icon-sort-amount-desc{
 
 
 /******************************************************************************************************/
-/***************************************EMPIEZA DE 769px A 991px***************************************/
+/***************************************EMPIEZA DE 991px A 769px***************************************/
 /******************************************************************************************************/
 @media only screen and (max-width: 991px){
 	/*#idMapa{
@@ -862,45 +866,9 @@ body section #idOrdenarProductos .icon-sort-amount-desc{
 	/******************************/
 	/****EMPIEZA BARRA SUPERIOR****/
 	/******************************/
-		#idPortada{
-			margin-right:30px;
-		}
-		#idExplotacion{
-			margin-right:30px;
-		}
-		#idTienda{
-			margin-right:30px;
-		}
-				#arregloCarrito{
-					float: left;
-				}
-				#arregloCarrito2{
-					overflow: auto;
-					width: 162px;
-					margin: 0 auto;
-				}
-		#idContacto{
-		}
 			body div div nav div .nav_div_ul_li_a{
-				padding:10px;
 				font:normal normal normal 15px arial;
 			}
-			body div div nav div .nav_div_ul_li_ul{
-				margin-top: 4px;
-				padding-top: 10px;
-				height: 0;
-			}
-			body div div nav div .nav_div_ul_li:hover ul{
-				height: 167px;
-			}
-				body div div nav div .contenedorDesplegableSuperior{
-					padding: 10px 0;
-				}
-						body div div nav div .nav_div_ul_li_ul_li_a{
-							font:normal normal normal 14px arial;
-							padding: 10px;
-							margin-left: 0.75px;
-						}
 	/******************************/
 	/****TERMINA BARRA SUPERIOR****/
 	/******************************/
@@ -1037,7 +1005,7 @@ body #contenedorCuerpo{
 }
 
 /******************************************************************************************************/
-/***************************************TERMINA DE 769px A 991px***************************************/
+/***************************************TERMINA DE 991px A 769px***************************************/
 /******************************************************************************************************/
 
 
@@ -1045,7 +1013,7 @@ body #contenedorCuerpo{
 
 
 /******************************************************************************************************/
-/***************************************EMPIEZA DE 601px A 768px***************************************/
+/***************************************EMPIEZA DE 768px A 601px***************************************/
 /******************************************************************************************************/
 
 @media only screen and (max-width: 768px){
@@ -1127,13 +1095,13 @@ body #fondoCabecera{
 	}
 
 	body div div nav #contenedorBarraSuperior{
-		
+		background-color: yellow;
 		margin: 0;
 		padding: 0;
 	}
 	body div div nav div .nav_div_ul{
-		margin: 10px 0;
-		padding: 10px 0;
+		margin: 0;
+		padding: 0;
 		
 		display: -moz-flex;
 		display: -ms-flex;
@@ -1233,10 +1201,10 @@ body #fondoCabecera{
 					margin: 0;
 					padding: 0;
 					border:none;
-					
+					background-color: red;
 				}
 					body div div nav div .nav_div_ul_li_ul_li{
-						
+						background-color: orange;
 						margin: 0;
 						padding: 0;
 					}
@@ -1339,7 +1307,7 @@ body div nav div ul li a .icon-old-phone{
 
 
 /******************************************************************************************************/
-/***************************************TERMINA DE 601px A 768px***************************************/
+/***************************************TERMINA DE 768px A 601px***************************************/
 /******************************************************************************************************/
 
 
@@ -1347,7 +1315,7 @@ body div nav div ul li a .icon-old-phone{
 
 
 /******************************************************************************************************/
-/***************************************EMPIEZA DE 481px A 600px***************************************/
+/***************************************EMPIEZA DE 600px A 481px***************************************/
 /******************************************************************************************************/
 @media only screen and (max-width: 600px){
 	
@@ -1366,7 +1334,7 @@ body div nav div ul li a .icon-old-phone{
 	
 	
 	body section article{
-			
+			background-color: yellow;
 			height: 170px;
 			padding: 0;
 			margin: 10px 0;
@@ -1382,14 +1350,14 @@ body div nav div ul li a .icon-old-phone{
 			align-items: stretch;
 		}
 			body section article figure{
-				
+				background-color:coral;
 				width: 200px;
 				height: 170px;
 				padding: 0;
 				margin: 0;
 			}
 				body section article figure img{
-					
+					background-color:cornflowerblue;
 					
 					width: 200px;
 					height: 170px;
@@ -1398,7 +1366,7 @@ body div nav div ul li a .icon-old-phone{
 				}
 
 				.contenedorDatosArticulos{
-					
+					background-color: chartreuse;
 					width: 52%;
 					padding: 0;
 					margin: 0;
@@ -1419,27 +1387,27 @@ body div nav div ul li a .icon-old-phone{
 					/*order: 2;*/
 				}
 				.contenedorDatosArticulos a{
-					
+					background-color: blue;
 					padding: 0;
 					margin: 10px 0 0 0;
 					
 				}
 				.contenedorDatosArticulos .classAloeNombres{
-					
+					background-color:cornflowerblue;
 					display: block;
 					padding: 0;
 					margin: 0 0 10px;;
 				}
 
 				.contenedorDatosArticulos .classAloeDescripciones{
-					
+					background-color:cornflowerblue;
 					display: block;
 					padding: 0;
 					margin: 0;
 				}
 
 				.contenedorComprasArticulos{
-					
+					background-color:blue;
 					width: 52%;
 					padding:0;
 					margin: 0;
@@ -1478,14 +1446,14 @@ body div nav div ul li a .icon-old-phone{
 				}
 }
 /******************************************************************************************************/
-/***************************************TERMINA DE 481px A 600px***************************************/
+/***************************************TERMINA DE 600px A 481px***************************************/
 /******************************************************************************************************/
 
 
 
 
 /******************************************************************************************************/
-/***************************************EMPIEZA DE 376px A 480px***************************************/
+/***************************************EMPIEZA DE 480px A 376px***************************************/
 /******************************************************************************************************/
 @media only screen and (max-width: 480px){
 	
@@ -1543,10 +1511,10 @@ body #contenedorCuerpo{
 		body section article{
 			height: 125px;
 			border-radius: 0;
-			
+			background-color: aqua;
 	}
 			body section article figure{
-				
+				background-color:coral;
 				margin: 5px;
 				width: 100px;
 				height: 100px;
@@ -1569,7 +1537,7 @@ body #contenedorCuerpo{
 					flex-basis: 60%;
 				}
 				.contenedorDatosArticulos a{
-					
+					background-color: purple;
 					padding: 0;
 					margin: 5px 0 0 0;
 				}
@@ -1601,7 +1569,13 @@ body #contenedorCuerpo{
 				}
 }	
 /******************************************************************************************************/
-/***************************************TERMINA DE 376px A 480px***************************************/
+/***************************************TERMINA DE 480px A 376px***************************************/
+/******************************************************************************************************/
+
+
+
+/******************************************************************************************************/
+/***************************************EMPIEZA 376px A 0px***************************************/
 /******************************************************************************************************/
 
 	@media only screen and (max-width: 375px){
@@ -1610,7 +1584,7 @@ body #contenedorCuerpo{
 	
 }
 /******************************************************************************************************/
-/***************************************TERMINA DE 376px A 480px***************************************/
+/***************************************TERMINA 376px A 0px***************************************/
 /******************************************************************************************************/
 
 
